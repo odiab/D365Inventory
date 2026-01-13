@@ -1,0 +1,34 @@
+// Global using directives
+
+global using System.Collections;
+global using System.Globalization;
+global using System.Net;
+global using System.Text.Json;
+global using CommunityToolkit.Maui;
+global using CommunityToolkit.Mvvm.Messaging;
+global using CommunityToolkit.Mvvm.Messaging.Messages;
+global using D365.Presentation.Device.Models;
+global using D365.Presentation.Device.PageModels;
+global using D365.Presentation.Device.PageModels.MasterData;
+global using D365.Presentation.Device.PageModels.OnHands;
+global using D365.Presentation.Device.PageModels.Products;
+global using D365.Presentation.Device.PageModels.PurchaseOrder;
+global using D365.Presentation.Device.PageModels.SalesOrder;
+global using D365.Presentation.Device.PageModels.TransferOrder;
+global using D365.Presentation.Device.Pages;
+global using D365.Presentation.Device.Pages.Products;
+global using D365.Presentation.Device.Pages.PurchaseOrder;
+global using D365.Presentation.Device.Pages.SalesOrder;
+global using D365.Presentation.Device.Pages.TransferOrder;
+global using D365.Presentation.Device.Plugins.DataStore.SQLite;
+global using D365.Presentation.Device.Plugins.DataStore.SQLite.Data;
+global using D365.Presentation.Device.Plugins.DataStore.WebApi;
+global using D365.Presentation.Device.SearchModel;
+global using D365.Presentation.Device.Services;
+global using D365.Presentation.Device.UseCase;
+global using D365.Presentation.Device.UseCase.Mappers;
+global using D365.Presentation.Device.UseCase.PluginInterfaces;
+global using D365.Presentation.Device.UseCase.Utilities;
+global using Duende.IdentityModel.Client;
+global using Microsoft.Extensions.Caching.Memory;
+global using Microsoft.Extensions.Logging;

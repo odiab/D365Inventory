@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="D365.Presentation.Device.Pages.MainPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:pageModels="clr-namespace:D365.Presentation.Device.PageModels"
+    Title="Main Page"
+    x:DataType="pageModels:MainPageModel">
+
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="10"
+            VerticalOptions="Center">
+
+            <Button Command="{Binding LogoutCommand}" Text="Logout" />
+
+            <Label Margin="0,5,0,0" Text="Product Master Data" />
+            <Grid
+                ColumnDefinitions="*, *"
+                ColumnSpacing="5"
+                RowDefinitions="Auto, Auto, Auto"
+                RowSpacing="5">
+                <Button
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    Command="{Binding OpenProductsCommand}"
+                    Text="Products" />
+                <Button
+                    Grid.Row="0"
+                    Grid.Column="1"
+                    Command="{Binding OpenProductColorsCommand}"
+                    Text="Colors" />
+                <Button
+                    Grid.Row="1"
+                    Grid.Column="0"
+                    Command="{Binding OpenProductSizesCommand}"
+                    Text="Sizes" />
+                <Button
+                    Grid.Row="1"
+                    Grid.Column="1"
+                    Command="{Binding OpenProductStylesCommand}"
+                    Text="Styles" />
+                <Button
+                    Grid.Row="2"
+                    Grid.Column="0"
+                    Command="{Binding OpenProductConfigurationsCommand}"
+                    Text="Configuration" />
+            </Grid>
+
+
+
+
+            <Label Margin="0,5,0,0" Text="Master Data" />
+            <Grid ColumnDefinitions="*,*" ColumnSpacing="5">
+                <Button
+                    Grid.Column="0"
+                    Command="{Binding OpenWarehousePageCommand}"
+                    Text="Warehouses" />
+                <Button
+                    Grid.Column="1"
+                    Command="{Binding OpenSitePageCommand}"
+                    Text="Sites" />
+            </Grid>
+
+
+            <Label Margin="0,5,0,0" Text="On Hold" />
+            <Grid
+                ColumnDefinitions="*, *"
+                ColumnSpacing="5"
+                RowDefinitions="Auto"
+                RowSpacing="5">
+                <Button
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    Command="{Binding OpenOnHandPageCommand}"
+                    Text="Open On-Hand" />
+            </Grid>
+
+            <Label Margin="0,5,0,0" Text="Transfer Order" />
+            <Grid
+                ColumnDefinitions="*,*"
+                ColumnSpacing="5"
+                RowDefinitions="Auto, Auto, Auto"
+                RowSpacing="5">
+
+                <Button
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    Command="{Binding OpenTransferOrderPageCommand}"
+                    Text="Transfer Order" />
+
+                <Button
+                    Grid.Row="0"
+                    Grid.Column="1"
+                    Command="{Binding OpenAddTransferOrderPageCommand}"
+                    Text="Add Transfer Order" />
+
+                <Button
+                    Grid.Row="1"
+                    Grid.Column="0"
+                    Command="{Binding OpenShippedTransferOrderPageCommand}"
+                    Text="Shipped Orders" />
+
+
+            </Grid>
+
+            <Label Margin="0,5,0,0" Text="Purchase Order" />
+            <Grid
+                ColumnDefinitions="*, *"
+                ColumnSpacing="5"
+                RowDefinitions="Auto"
+                RowSpacing="5">
+                <Button
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="2"
+                    Command="{Binding OpenPurchaseOrderPageCommand}"
+                    Text="Open Purchase Orders" />
+            </Grid>
+
+            <Label Margin="0,5,0,0" Text="Sales Order" />
+            <Grid
+                ColumnDefinitions="*, *"
+                ColumnSpacing="5"
+                RowDefinitions="Auto"
+                RowSpacing="5">
+                <Button
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="2"
+                    Command="{Binding OpenSalesOrderPageCommand}"
+                    Text="Open Sales Orders" />
+            </Grid>
+        </VerticalStackLayout>
+    </ScrollView>
+
+
+</ContentPage>

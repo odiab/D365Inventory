@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<ContentPage
+    x:Class="D365.Presentation.Device.Pages.SitePage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:handlers="clr-namespace:D365.Presentation.Device.Handlers"
+    xmlns:masterData="clr-namespace:D365.Presentation.Device.PageModels.MasterData"
+    xmlns:records="clr-namespace:D365.Presentation.Device.Core.Records;assembly=D365.Presentation.Device.Core"
+    Title="Sites"
+    x:DataType="masterData:SitePageModel">
+
+
+    <Shell.SearchHandler>
+        <handlers:GenericSearchHandler
+            DisplayMemberName="."
+            SearchPlaceholder="Search sites..."
+            SearchResults="{Binding Sites}" />
+    </Shell.SearchHandler>
+
+    <Grid>
+
+        <RefreshView Command="{Binding RefreshCommand}" IsRefreshing="{Binding IsRefreshing}">
+
+            <CollectionView ItemsSource="{Binding Sites}">
+
+                <CollectionView.ItemTemplate>
+                    <DataTemplate x:DataType="records:D365SiteRecord">
+
+                        <Border
+                            Margin="5"
+                            Padding="5"
+                            StrokeShape="RoundRectangle 5">
+                            <VerticalStackLayout>
+                                <HorizontalStackLayout>
+                                    <Label FontAttributes="Bold" Text="[" />
+                                    <Label FontAttributes="Bold" Text="{Binding SiteId}" />
+                                    <Label FontAttributes="Bold" Text="] - " />
+                                    <Label FontAttributes="Bold" Text="{Binding Name}" />
+                                </HorizontalStackLayout>
+                            </VerticalStackLayout>
+                        </Border>
+
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+
+            </CollectionView>
+
+
+        </RefreshView>
+
+        <!--#region BoxView-->
+        <Grid Opacity="0.5">
+            <BoxView
+                HorizontalOptions="Fill"
+                IsVisible="{Binding IsBusy}"
+                Opacity="0.6"
+                VerticalOptions="Fill"
+                Color="Black" />
+        </Grid>
+
+        <!--#endregion-->
+
+
+        <!--  Loading Overlay  -->
+        <ActivityIndicator
+            BackgroundColor="Transparent"
+            HorizontalOptions="Center"
+            IsRunning="{Binding IsBusy}"
+            IsVisible="{Binding IsBusy}"
+            VerticalOptions="Center"
+            Color="Black" />
+
+
+    </Grid>
+
+
+</ContentPage>

@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<ContentPage
+    x:Class="D365.Presentation.Device.Pages.TransferOrder.AddTransferOrderPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:models="clr-namespace:D365.Presentation.Device.Models"
+    xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+    xmlns:transferOrder="clr-namespace:D365.Presentation.Device.PageModels.TransferOrder"
+    Title="Add Transfer Order"
+    x:DataType="transferOrder:AddTransferOrderPageModel">
+
+
+    <Grid>
+
+        <ScrollView>
+
+
+            <VerticalStackLayout Padding="15" Spacing="10">
+
+
+                <!--#region Order Header Section-->
+
+                <VerticalStackLayout>
+                    <Label Text="Shipping Warehouse:" />
+
+                    <Picker
+                        HorizontalOptions="Fill"
+                        ItemDisplayBinding="{Binding WarehouseName}"
+                        ItemsSource="{Binding Warehouses}"
+                        SelectedItem="{Binding ShippingWarehouseSelected}" />
+
+                    <Label Margin="0,15,0,0" Text="Receiving Warehouse:" />
+                    <Picker
+                        ItemDisplayBinding="{Binding WarehouseName}"
+                        ItemsSource="{Binding Warehouses}"
+                        SelectedItem="{Binding ReceivingWarehouseSelected}" />
+                </VerticalStackLayout>
+
+                <!--#endregion-->
+
+                <!--  Buttons  -->
+                <Grid ColumnDefinitions="*, *" ColumnSpacing="10">
+                    <Button
+                        Grid.Column="0"
+                        Command="{Binding AddLineCommand}"
+                        Text="Add Line" />
+                    <Button
+                        Grid.Column="1"
+                        BackgroundColor="{StaticResource Tertiary}"
+                        Command="{Binding SaveOrderCommand}"
+                        Text="Save Order" />
+                </Grid>
+
+
+                <!--#endregion-->
+
+                <!--#region Order Line Section-->
+
+                <CollectionView ItemsSource="{Binding Lines}">
+                    <CollectionView.HeaderTemplate>
+                        <DataTemplate>
+
+                            <Grid
+                                Padding="15"
+                                BackgroundColor="{StaticResource Gray100}"
+                                ColumnDefinitions="*, Auto">
+
+                                <Grid Grid.Column="0" RowDefinitions="Auto, Auto, Auto">
+
+                                    <Grid Grid.Row="0" ColumnDefinitions="*, Auto">
+
+                                        <Label Grid.Column="0" Text="Item Number" />
+                                        <Label Grid.Column="1" Text="Quantity" />
+
+                                    </Grid>
+                                    <Grid Grid.Row="1" ColumnDefinitions="*, *">
+                                        <Label Grid.Column="0" Text="Color" />
+                                        <Label Grid.Column="1" Text="Style" />
+                                    </Grid>
+                                    <Grid Grid.Row="2" ColumnDefinitions="*, *">
+                                        <Label Grid.Column="0" Text="Size" />
+                                        <Label Grid.Column="1" Text="Configuration" />
+                                    </Grid>
+                                </Grid>
+
+                                <Border
+                                    Grid.Column="2"
+                                    StrokeThickness="0"
+                                    WidthRequest="24" />
+
+                            </Grid>
+
+                        </DataTemplate>
+                    </CollectionView.HeaderTemplate>
+
+
+
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate x:DataType="models:TransferOrderLineModel">
+                            <Grid ColumnDefinitions="*" RowDefinitions="Auto">
+
+                                <Border
+                                    Grid.Row="0"
+                                    Grid.Column="0"
+                                    Margin="0,5,0,0"
+                                    StrokeShape="RoundRectangle 5"
+                                    StrokeThickness="1">
+
+                                    <Grid ColumnDefinitions="*, Auto">
+
+                                        <Grid Grid.Column="0" RowDefinitions="Auto, Auto, Auto">
+
+                                            <Grid Grid.Row="0" ColumnDefinitions="*, Auto">
+
+                                                <Entry
+                                                    Grid.Column="0"
+                                                    Placeholder="Enter item number"
+                                                    ReturnCommand="{Binding Source={RelativeSource AncestorType={x:Type transferOrder:AddTransferOrderPageModel}}, Path=LoadDimensionsCommand}"
+                                                    ReturnCommandParameter="{Binding .}"
+                                                    Text="{Binding Item}">
+
+                                                    <Entry.Behaviors>
+                                                        <!--  Trigger when Enter key is pressed  -->
+                                                        <toolkit:EventToCommandBehavior
+                                                            Command="{Binding Source={x:Reference OrderPage}, Path=BindingContext.LoadDimensionsCommand}"
+                                                            CommandParameter="{Binding .}"
+                                                            EventName="Completed" />
+
+                                                        <!--  Trigger when Entry loses focus  -->
+                                                        <toolkit:EventToCommandBehavior
+                                                            Command="{Binding Source={x:Reference OrderPage}, Path=BindingContext.LoadDimensionsCommand}"
+                                                            CommandParameter="{Binding .}"
+                                                            EventName="Unfocused" />
+                                                    </Entry.Behaviors>
+
+                                                </Entry>
+                                                <Entry
+                                                    Grid.Column="1"
+                                                    Keyboard="Numeric"
+                                                    Placeholder="Enter quantity"
+                                                    Text="{Binding Quantity}" />
+
+                                            </Grid>
+
+                                            <Grid Grid.Row="1" ColumnDefinitions="*, *">
+                                                <Picker
+                                                    Grid.Column="0"
+                                                    IsEnabled="{Binding Color.IsEnabled}"
+                                                    ItemDisplayBinding="{Binding ColorId}"
+                                                    ItemsSource="{Binding Color.Data}"
+                                                    SelectedItem="{Binding Color.Selected}" />
+
+                                                <Picker
+                                                    Grid.Column="1"
+                                                    IsEnabled="{Binding Style.IsEnabled}"
+                                                    ItemDisplayBinding="{Binding StyleId}"
+                                                    ItemsSource="{Binding Style.Data}"
+                                                    SelectedItem="{Binding Style.Selected}" />
+                                            </Grid>
+                                            <Grid Grid.Row="2" ColumnDefinitions="*, *">
+                                                <Picker
+                                                    Grid.Column="0"
+                                                    IsEnabled="{Binding Size.IsEnabled}"
+                                                    ItemDisplayBinding="{Binding SizeId}"
+                                                    ItemsSource="{Binding Size.Data}"
+                                                    SelectedItem="{Binding Size.Selected}" />
+
+                                                <Picker
+                                                    Grid.Column="1"
+                                                    IsEnabled="{Binding Configuration.IsEnabled}"
+                                                    ItemDisplayBinding="{Binding ProductConfigurationId}"
+                                                    ItemsSource="{Binding Configuration.Data}"
+                                                    SelectedItem="{Binding Configuration.Selected}" />
+                                            </Grid>
+
+
+                                        </Grid>
+
+                                        <Border
+                                            Grid.Column="1"
+                                            Margin="5,0"
+                                            Padding="5"
+                                            HeightRequest="32"
+                                            StrokeShape="RoundRectangle 5"
+                                            WidthRequest="32">
+                                            <ImageButton
+                                                Aspect="AspectFit"
+                                                Command="{Binding Source={RelativeSource AncestorType={x:Type transferOrder:AddTransferOrderPageModel}}, Path=RemoveLineCommand}"
+                                                CommandParameter="{Binding .}"
+                                                Source="trash_regular_24.png" />
+                                        </Border>
+
+
+                                    </Grid>
+
+                                </Border>
+                            </Grid>
+
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+
+                <!--#endregion-->
+
+
+                <!--#region Buttons-->
+
+
+
+            </VerticalStackLayout>
+
+        </ScrollView>
+
+        <!--#region BoxView-->
+        <Grid Opacity="0.5">
+            <BoxView
+                HorizontalOptions="Fill"
+                IsVisible="{Binding IsBusy}"
+                Opacity="0.6"
+                VerticalOptions="Fill"
+                Color="Black" />
+        </Grid>
+
+        <!--#endregion-->
+
+
+        <!--  Loading Overlay  -->
+        <ActivityIndicator
+            BackgroundColor="Transparent"
+            HorizontalOptions="Center"
+            IsRunning="{Binding IsBusy}"
+            IsVisible="{Binding IsBusy}"
+            VerticalOptions="Center"
+            Color="Black" />
+    </Grid>
+
+
+
+
+
+</ContentPage>

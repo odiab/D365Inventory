@@ -1,0 +1,17 @@
+<Solution>
+  <Folder Name="/01 - Device/">
+    <Project Path="D365.Presentation.Device/D365.Presentation.Device.csproj">
+      <Deploy Solution="Debug|*" />
+    </Project>
+  </Folder>
+  <Folder Name="/02 - Core/">
+    <Project Path="D365.Presentation.Device.Core/D365.Presentation.Device.Core.csproj" />
+  </Folder>
+  <Folder Name="/03 - Plugins/">
+    <Project Path="D365.Presentation.Device.Plugins.DataStore.SQLite/D365.Presentation.Device.Plugins.DataStore.SQLite.csproj" />
+    <Project Path="D365.Presentation.Device.Plugins.DataStore.WebApi/D365.Presentation.Device.Plugins.DataStore.WebApi.csproj" />
+  </Folder>
+  <Folder Name="/04 - UseCase/">
+    <Project Path="D365.Presentation.Device.UseCase/D365.Presentation.Device.UseCase.csproj" />
+  </Folder>
+</Solution>

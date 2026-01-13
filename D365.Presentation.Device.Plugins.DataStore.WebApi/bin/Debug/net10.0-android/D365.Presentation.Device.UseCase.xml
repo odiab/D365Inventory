@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>D365.Presentation.Device.UseCase</name>
+    </assembly>
+    <members>
+        <member name="T:D365.Presentation.Device.UseCase.Resource">
+            <summary>
+            Android Resource Designer class.
+            Exposes the Android Resource designer assembly into the project Namespace.
+            </summary>
+        </member>
+    </members>
+</doc>

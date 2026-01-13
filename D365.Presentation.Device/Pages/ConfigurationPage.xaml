@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<ContentPage
+    x:Class="D365.Presentation.Device.Pages.ConfigurationPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:pageModels="clr-namespace:D365.Presentation.Device.PageModels"
+    Title="Configure D365 Connection"
+    x:DataType="pageModels:ConfigurationPageModel"
+    Shell.NavBarIsVisible="False">
+
+    <Grid>
+
+        <ScrollView>
+            <Grid RowDefinitions="*, Auto">
+                <Image Grid.Row="0" />
+                <VerticalStackLayout
+                    Grid.Row="1"
+                    Padding="30"
+                    Spacing="20">
+
+                    <!--  Header  -->
+                    <Label
+                        FontSize="24"
+                        HorizontalOptions="Center"
+                        Text="Configure D365 Connection" />
+
+                    <!--  Input Fields  -->
+                    <Entry Placeholder="Client ID" Text="{Binding ClientIdEntry}" />
+
+                    <Entry
+                        IsPassword="True"
+                        Placeholder="Secret Key"
+                        Text="{Binding SecretKeyEntry}" />
+                    <Entry Placeholder="Tenant ID" Text="{Binding TenantIdEntry}" />
+                    <Entry
+                        Keyboard="Url"
+                        Placeholder="D365 URL"
+                        Text="{Binding D365UrlEntry}" />
+
+                    <!--  Save Button  -->
+                    <Button Command="{Binding SaveConfigurationCommand}" Text="Save Configuration" />
+
+                </VerticalStackLayout>
+            </Grid>
+        </ScrollView>
+
+
+        <!--#region BoxView-->
+        <Grid Opacity="0.6">
+            <BoxView
+                HorizontalOptions="Fill"
+                IsVisible="{Binding IsBusy}"
+                Opacity="0.6"
+                VerticalOptions="Fill"
+                Color="Black" />
+        </Grid>
+
+        <!--#endregion-->
+
+
+        <!--  Loading Overlay  -->
+        <ActivityIndicator
+            BackgroundColor="Transparent"
+            HorizontalOptions="Center"
+            IsRunning="{Binding IsBusy}"
+            IsVisible="{Binding IsBusy}"
+            VerticalOptions="Center"
+            Color="Black" />
+
+
+    </Grid>
+
+</ContentPage>

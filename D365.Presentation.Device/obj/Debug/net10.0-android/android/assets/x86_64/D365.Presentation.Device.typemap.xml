@@ -1,0 +1,10 @@
+<api type="debug" assembly-name="D365.Presentation.Device" mvid="b659cc6d232c4becbcd82c581ec80928">
+  <java-to-managed>
+    <entry java-name="crc64eb71cfd323157155/MainActivity" managed-name="D365.Presentation.Device.MainActivity, D365.Presentation.Device" managed-type-token-id="33554455" />
+    <entry java-name="crc64eb71cfd323157155/MainApplication" managed-name="D365.Presentation.Device.MainApplication, D365.Presentation.Device" managed-type-token-id="33554456" />
+  </java-to-managed>
+  <managed-to-java>
+    <entry java-name="crc64eb71cfd323157155/MainActivity" managed-name="D365.Presentation.Device.MainActivity, D365.Presentation.Device" managed-type-token-id="33554455" />
+    <entry java-name="crc64eb71cfd323157155/MainApplication" managed-name="D365.Presentation.Device.MainApplication, D365.Presentation.Device" managed-type-token-id="33554456" />
+  </managed-to-java>
+</api>

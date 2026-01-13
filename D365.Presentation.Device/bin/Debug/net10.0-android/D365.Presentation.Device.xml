@@ -1,0 +1,1286 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>D365.Presentation.Device</name>
+    </assembly>
+    <members>
+        <member name="T:D365.Presentation.Device.Models.OnHandProductColorModel">
+            <inheritdoc/>
+        </member>
+        <member name="P:D365.Presentation.Device.Models.OnHandProductColorModel.Data">
+            <inheritdoc cref="F:D365.Presentation.Device.Models.OnHandProductColorModel._data"/>
+        </member>
+        <member name="P:D365.Presentation.Device.Models.OnHandProductColorModel.Selected">
+            <inheritdoc cref="F:D365.Presentation.Device.Models.OnHandProductColorModel._selected"/>
+        </member>
+        <member name="P:D365.Presentation.Device.Models.OnHandProductColorModel.IsEnabled">
+            <inheritdoc cref="F:D365.Presentation.Device.Models.OnHandProductColorModel._isEnabled"/>
+        </member>
+        <member name="P:D365.Presentation.Device.Models.OnHandProductColorModel.Dimension">
+            <inheritdoc cref="F:D365.Presentation.Device.Models.OnHandProductColorModel._dimension"/>
+        </member>
+        <member name="T:D365.Presentation.Device.Models.OnHandProductConfigurationModel">
+            <inheritdoc/>
+        </member>
+        <member name="P:D365.Presentation.Device.Models.OnHandProductConfigurationModel.Data">
+            <inheritdoc cref="F:D365.Presentation.Device.Models.OnHandProductConfigurationModel._data"/>
+        </member>
+        <member name="P:D365.Presentation.Device.Models.OnHandProductConfigurationModel.Selected">
+            <inheritdoc cref="F:D365.Presentation.Device.Models.OnHandProductConfigurationModel._selected"/>
+        </member>
+        <member name="P:D365.Presentation.Device.Models.OnHandProductConfigurationModel.IsEnabled">
+            <inheritdoc cref="F:D365.Presentation.Device.Models.OnHandProductConfigurationModel._isEnabled"/>
+        </member>
+        <member name="P:D365.Presentation.Device.Models.OnHandProductConfigurationModel.Dimension">
+            <inheritdoc cref="F:D365.Presentation.Device.Models.OnHandProductConfigurationModel._dimension"/>
+        </member>
+        <member name="T:D365.Presentation.Device.Models.OnHandProductSizeModel">
+            <inheritdoc/>
+        </member>
+        <member name="P:D365.Presentation.Device.Models.OnHandProductSizeModel.Data">
+            <inheritdoc cref="F:D365.Presentation.Device.Models.OnHandProductSizeModel._data"/>
+        </member>
+        <member name="P:D365.Presentation.Device.Models.OnHandProductSizeModel.Selected">
+            <inheritdoc cref="F:D365.Presentation.Device.Models.OnHandProductSizeModel._selected"/>
+        </member>
+        <member name="P:D365.Presentation.Device.Models.OnHandProductSizeModel.IsEnabled">
+            <inheritdoc cref="F:D365.Presentation.Device.Models.OnHandProductSizeModel._isEnabled"/>
+        </member>
+        <member name="P:D365.Presentation.Device.Models.OnHandProductSizeModel.Dimension">
+            <inheritdoc cref="F:D365.Presentation.Device.Models.OnHandProductSizeModel._dimension"/>
+        </member>
+        <member name="T:D365.Presentation.Device.Models.OnHandProductStyleModel">
+            <inheritdoc/>
+        </member>
+        <member name="P:D365.Presentation.Device.Models.OnHandProductStyleModel.Data">
+            <inheritdoc cref="F:D365.Presentation.Device.Models.OnHandProductStyleModel._data"/>
+        </member>
+        <member name="P:D365.Presentation.Device.Models.OnHandProductStyleModel.Selected">
+            <inheritdoc cref="F:D365.Presentation.Device.Models.OnHandProductStyleModel._selected"/>
+        </member>
+        <member name="P:D365.Presentation.Device.Models.OnHandProductStyleModel.IsEnabled">
+            <inheritdoc cref="F:D365.Presentation.Device.Models.OnHandProductStyleModel._isEnabled"/>
+        </member>
+        <member name="P:D365.Presentation.Device.Models.OnHandProductStyleModel.Dimension">
+            <inheritdoc cref="F:D365.Presentation.Device.Models.OnHandProductStyleModel._dimension"/>
+        </member>
+        <member name="T:D365.Presentation.Device.Models.OnHandSiteModel">
+            <inheritdoc/>
+        </member>
+        <member name="P:D365.Presentation.Device.Models.OnHandSiteModel.Data">
+            <inheritdoc cref="F:D365.Presentation.Device.Models.OnHandSiteModel._data"/>
+        </member>
+        <member name="P:D365.Presentation.Device.Models.OnHandSiteModel.Selected">
+            <inheritdoc cref="F:D365.Presentation.Device.Models.OnHandSiteModel._selected"/>
+        </member>
+        <member name="P:D365.Presentation.Device.Models.OnHandSiteModel.IsEnabled">
+            <inheritdoc cref="F:D365.Presentation.Device.Models.OnHandSiteModel._isEnabled"/>
+        </member>
+        <member name="P:D365.Presentation.Device.Models.OnHandSiteModel.Dimension">
+            <inheritdoc cref="F:D365.Presentation.Device.Models.OnHandSiteModel._dimension"/>
+        </member>
+        <member name="T:D365.Presentation.Device.Models.OnHandWarehouseModel">
+            <inheritdoc/>
+        </member>
+        <member name="P:D365.Presentation.Device.Models.OnHandWarehouseModel.Data">
+            <inheritdoc cref="F:D365.Presentation.Device.Models.OnHandWarehouseModel._data"/>
+        </member>
+        <member name="P:D365.Presentation.Device.Models.OnHandWarehouseModel.Selected">
+            <inheritdoc cref="F:D365.Presentation.Device.Models.OnHandWarehouseModel._selected"/>
+        </member>
+        <member name="P:D365.Presentation.Device.Models.OnHandWarehouseModel.IsEnabled">
+            <inheritdoc cref="F:D365.Presentation.Device.Models.OnHandWarehouseModel._isEnabled"/>
+        </member>
+        <member name="P:D365.Presentation.Device.Models.OnHandWarehouseModel.Dimension">
+            <inheritdoc cref="F:D365.Presentation.Device.Models.OnHandWarehouseModel._dimension"/>
+        </member>
+        <member name="T:D365.Presentation.Device.Models.TransferOrderHeaderModel">
+            <inheritdoc/>
+        </member>
+        <member name="P:D365.Presentation.Device.Models.TransferOrderHeaderModel.Id">
+            <inheritdoc cref="F:D365.Presentation.Device.Models.TransferOrderHeaderModel._id"/>
+        </member>
+        <member name="P:D365.Presentation.Device.Models.TransferOrderHeaderModel.DataAreaId">
+            <inheritdoc cref="F:D365.Presentation.Device.Models.TransferOrderHeaderModel._dataAreaId"/>
+        </member>
+        <member name="P:D365.Presentation.Device.Models.TransferOrderHeaderModel.TransferOrderNumber">
+            <inheritdoc cref="F:D365.Presentation.Device.Models.TransferOrderHeaderModel._transferOrderNumber"/>
+        </member>
+        <member name="P:D365.Presentation.Device.Models.TransferOrderHeaderModel.ShippingWarehouseId">
+            <inheritdoc cref="F:D365.Presentation.Device.Models.TransferOrderHeaderModel._shippingWarehouseId"/>
+        </member>
+        <member name="P:D365.Presentation.Device.Models.TransferOrderHeaderModel.ReceivingWarehouseId">
+            <inheritdoc cref="F:D365.Presentation.Device.Models.TransferOrderHeaderModel._receivingWarehouseId"/>
+        </member>
+        <member name="P:D365.Presentation.Device.Models.TransferOrderHeaderModel.RequestedReceiptDate">
+            <inheritdoc cref="F:D365.Presentation.Device.Models.TransferOrderHeaderModel._requestedReceiptDate"/>
+        </member>
+        <member name="P:D365.Presentation.Device.Models.TransferOrderHeaderModel.TransferOrderStatus">
+            <inheritdoc cref="F:D365.Presentation.Device.Models.TransferOrderHeaderModel._transferOrderStatus"/>
+        </member>
+        <member name="T:D365.Presentation.Device.Models.TransferOrderLineModel">
+            <inheritdoc/>
+        </member>
+        <member name="P:D365.Presentation.Device.Models.TransferOrderLineModel.Item">
+            <inheritdoc cref="F:D365.Presentation.Device.Models.TransferOrderLineModel._item"/>
+        </member>
+        <member name="P:D365.Presentation.Device.Models.TransferOrderLineModel.Quantity">
+            <inheritdoc cref="F:D365.Presentation.Device.Models.TransferOrderLineModel._quantity"/>
+        </member>
+        <member name="P:D365.Presentation.Device.Models.TransferOrderLineModel.Color">
+            <inheritdoc cref="F:D365.Presentation.Device.Models.TransferOrderLineModel._color"/>
+        </member>
+        <member name="P:D365.Presentation.Device.Models.TransferOrderLineModel.Style">
+            <inheritdoc cref="F:D365.Presentation.Device.Models.TransferOrderLineModel._style"/>
+        </member>
+        <member name="P:D365.Presentation.Device.Models.TransferOrderLineModel.Size">
+            <inheritdoc cref="F:D365.Presentation.Device.Models.TransferOrderLineModel._size"/>
+        </member>
+        <member name="P:D365.Presentation.Device.Models.TransferOrderLineModel.Configuration">
+            <inheritdoc cref="F:D365.Presentation.Device.Models.TransferOrderLineModel._configuration"/>
+        </member>
+        <member name="T:D365.Presentation.Device.PageModels.AbstractPageModel">
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:D365.Presentation.Device.PageModels.AbstractPageModel.IsAppEnabled">
+            <inheritdoc cref="F:D365.Presentation.Device.PageModels.AbstractPageModel._isAppEnabled"/>
+        </member>
+        <member name="F:D365.Presentation.Device.PageModels.AbstractPageModel.backButtonCommand">
+            <summary>The backing field for <see cref="P:D365.Presentation.Device.PageModels.AbstractPageModel.BackButtonCommand"/>.</summary>
+        </member>
+        <member name="P:D365.Presentation.Device.PageModels.AbstractPageModel.BackButtonCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:D365.Presentation.Device.PageModels.AbstractPageModel.BackButtonAsync"/>.</summary>
+        </member>
+        <member name="T:D365.Presentation.Device.PageModels.ConfigurationPageModel">
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:D365.Presentation.Device.PageModels.ConfigurationPageModel.ClientIdEntry">
+            <inheritdoc cref="F:D365.Presentation.Device.PageModels.ConfigurationPageModel._clientIdEntry"/>
+        </member>
+        <member name="P:D365.Presentation.Device.PageModels.ConfigurationPageModel.SecretKeyEntry">
+            <inheritdoc cref="F:D365.Presentation.Device.PageModels.ConfigurationPageModel._secretKeyEntry"/>
+        </member>
+        <member name="P:D365.Presentation.Device.PageModels.ConfigurationPageModel.D365UrlEntry">
+            <inheritdoc cref="F:D365.Presentation.Device.PageModels.ConfigurationPageModel._d365UrlEntry"/>
+        </member>
+        <member name="P:D365.Presentation.Device.PageModels.ConfigurationPageModel.TenantIdEntry">
+            <inheritdoc cref="F:D365.Presentation.Device.PageModels.ConfigurationPageModel._tenantIdEntry"/>
+        </member>
+        <member name="P:D365.Presentation.Device.PageModels.ConfigurationPageModel.IsBusy">
+            <inheritdoc cref="F:D365.Presentation.Device.PageModels.ConfigurationPageModel._isBusy"/>
+        </member>
+        <member name="F:D365.Presentation.Device.PageModels.ConfigurationPageModel.saveConfigurationCommand">
+            <summary>The backing field for <see cref="P:D365.Presentation.Device.PageModels.ConfigurationPageModel.SaveConfigurationCommand"/>.</summary>
+        </member>
+        <member name="P:D365.Presentation.Device.PageModels.ConfigurationPageModel.SaveConfigurationCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:D365.Presentation.Device.PageModels.ConfigurationPageModel.OnSaveConfigurationAsync"/>.</summary>
+        </member>
+        <member name="T:D365.Presentation.Device.PageModels.LoginPageModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:D365.Presentation.Device.PageModels.LoginPageModel.UserOrEmailEntry">
+            <inheritdoc cref="F:D365.Presentation.Device.PageModels.LoginPageModel._userOrEmailEntry"/>
+        </member>
+        <member name="P:D365.Presentation.Device.PageModels.LoginPageModel.PasswordEntry">
+            <inheritdoc cref="F:D365.Presentation.Device.PageModels.LoginPageModel._passwordEntry"/>
+        </member>
+        <member name="P:D365.Presentation.Device.PageModels.LoginPageModel.RememberMeCheckbox">
+            <inheritdoc cref="F:D365.Presentation.Device.PageModels.LoginPageModel._rememberMeCheckbox"/>
+        </member>
+        <member name="P:D365.Presentation.Device.PageModels.LoginPageModel.IsPasswordHidden">
+            <inheritdoc cref="F:D365.Presentation.Device.PageModels.LoginPageModel._isPasswordHidden"/>
+        </member>
+        <member name="P:D365.Presentation.Device.PageModels.LoginPageModel.IsBusy">
+            <inheritdoc cref="F:D365.Presentation.Device.PageModels.LoginPageModel._isBusy"/>
+        </member>
+        <member name="F:D365.Presentation.Device.PageModels.LoginPageModel.togglePasswordVisibilityCommand">
+            <summary>The backing field for <see cref="P:D365.Presentation.Device.PageModels.LoginPageModel.TogglePasswordVisibilityCommand"/>.</summary>
+        </member>
+        <member name="P:D365.Presentation.Device.PageModels.LoginPageModel.TogglePasswordVisibilityCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:D365.Presentation.Device.PageModels.LoginPageModel.TogglePasswordVisibility"/>.</summary>
+        </member>
+        <member name="F:D365.Presentation.Device.PageModels.LoginPageModel.loginCommand">
+            <summary>The backing field for <see cref="P:D365.Presentation.Device.PageModels.LoginPageModel.LoginCommand"/>.</summary>
+        </member>
+        <member name="P:D365.Presentation.Device.PageModels.LoginPageModel.LoginCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:D365.Presentation.Device.PageModels.LoginPageModel.LoginAsync"/>.</summary>
+        </member>
+        <member name="T:D365.Presentation.Device.PageModels.MainPageModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="F:D365.Presentation.Device.PageModels.MainPageModel.logoutCommand">
+            <summary>The backing field for <see cref="P:D365.Presentation.Device.PageModels.MainPageModel.LogoutCommand"/>.</summary>
+        </member>
+        <member name="P:D365.Presentation.Device.PageModels.MainPageModel.LogoutCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:D365.Presentation.Device.PageModels.MainPageModel.LogoutAsync"/>.</summary>
+        </member>
+        <member name="F:D365.Presentation.Device.PageModels.MainPageModel.openProductsCommand">
+            <summary>The backing field for <see cref="P:D365.Presentation.Device.PageModels.MainPageModel.OpenProductsCommand"/>.</summary>
+        </member>
+        <member name="P:D365.Presentation.Device.PageModels.MainPageModel.OpenProductsCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:D365.Presentation.Device.PageModels.MainPageModel.OpenProductsAsync"/>.</summary>
+        </member>
+        <member name="F:D365.Presentation.Device.PageModels.MainPageModel.openProductColorsCommand">
+            <summary>The backing field for <see cref="P:D365.Presentation.Device.PageModels.MainPageModel.OpenProductColorsCommand"/>.</summary>
+        </member>
+        <member name="P:D365.Presentation.Device.PageModels.MainPageModel.OpenProductColorsCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:D365.Presentation.Device.PageModels.MainPageModel.OpenProductColorsAsync"/>.</summary>
+        </member>
+        <member name="F:D365.Presentation.Device.PageModels.MainPageModel.openProductSizesCommand">
+            <summary>The backing field for <see cref="P:D365.Presentation.Device.PageModels.MainPageModel.OpenProductSizesCommand"/>.</summary>
+        </member>
+        <member name="P:D365.Presentation.Device.PageModels.MainPageModel.OpenProductSizesCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:D365.Presentation.Device.PageModels.MainPageModel.OpenProductSizesAsync"/>.</summary>
+        </member>
+        <member name="F:D365.Presentation.Device.PageModels.MainPageModel.openProductStylesCommand">
+            <summary>The backing field for <see cref="P:D365.Presentation.Device.PageModels.MainPageModel.OpenProductStylesCommand"/>.</summary>
+        </member>
+        <member name="P:D365.Presentation.Device.PageModels.MainPageModel.OpenProductStylesCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:D365.Presentation.Device.PageModels.MainPageModel.OpenProductStylesAsync"/>.</summary>
+        </member>
+        <member name="F:D365.Presentation.Device.PageModels.MainPageModel.openProductConfigurationsCommand">
+            <summary>The backing field for <see cref="P:D365.Presentation.Device.PageModels.MainPageModel.OpenProductConfigurationsCommand"/>.</summary>
+        </member>
+        <member name="P:D365.Presentation.Device.PageModels.MainPageModel.OpenProductConfigurationsCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:D365.Presentation.Device.PageModels.MainPageModel.OpenProductConfigurationsAsync"/>.</summary>
+        </member>
+        <member name="F:D365.Presentation.Device.PageModels.MainPageModel.openWarehousePageCommand">
+            <summary>The backing field for <see cref="P:D365.Presentation.Device.PageModels.MainPageModel.OpenWarehousePageCommand"/>.</summary>
+        </member>
+        <member name="P:D365.Presentation.Device.PageModels.MainPageModel.OpenWarehousePageCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:D365.Presentation.Device.PageModels.MainPageModel.OpenWarehousePageAsync"/>.</summary>
+        </member>
+        <member name="F:D365.Presentation.Device.PageModels.MainPageModel.openSitePageCommand">
+            <summary>The backing field for <see cref="P:D365.Presentation.Device.PageModels.MainPageModel.OpenSitePageCommand"/>.</summary>
+        </member>
+        <member name="P:D365.Presentation.Device.PageModels.MainPageModel.OpenSitePageCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:D365.Presentation.Device.PageModels.MainPageModel.OpenSitePageAsync"/>.</summary>
+        </member>
+        <member name="F:D365.Presentation.Device.PageModels.MainPageModel.openOnHandPageCommand">
+            <summary>The backing field for <see cref="P:D365.Presentation.Device.PageModels.MainPageModel.OpenOnHandPageCommand"/>.</summary>
+        </member>
+        <member name="P:D365.Presentation.Device.PageModels.MainPageModel.OpenOnHandPageCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:D365.Presentation.Device.PageModels.MainPageModel.OpenOnHandPageAsync"/>.</summary>
+        </member>
+        <member name="F:D365.Presentation.Device.PageModels.MainPageModel.openAddTransferOrderPageCommand">
+            <summary>The backing field for <see cref="P:D365.Presentation.Device.PageModels.MainPageModel.OpenAddTransferOrderPageCommand"/>.</summary>
+        </member>
+        <member name="P:D365.Presentation.Device.PageModels.MainPageModel.OpenAddTransferOrderPageCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:D365.Presentation.Device.PageModels.MainPageModel.OpenAddTransferOrderPageAsync"/>.</summary>
+        </member>
+        <member name="F:D365.Presentation.Device.PageModels.MainPageModel.openTransferOrderPageCommand">
+            <summary>The backing field for <see cref="P:D365.Presentation.Device.PageModels.MainPageModel.OpenTransferOrderPageCommand"/>.</summary>
+        </member>
+        <member name="P:D365.Presentation.Device.PageModels.MainPageModel.OpenTransferOrderPageCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:D365.Presentation.Device.PageModels.MainPageModel.OpenTransferOrderPageAsync"/>.</summary>
+        </member>
+        <member name="F:D365.Presentation.Device.PageModels.MainPageModel.openShippedTransferOrderPageCommand">
+            <summary>The backing field for <see cref="P:D365.Presentation.Device.PageModels.MainPageModel.OpenShippedTransferOrderPageCommand"/>.</summary>
+        </member>
+        <member name="P:D365.Presentation.Device.PageModels.MainPageModel.OpenShippedTransferOrderPageCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:D365.Presentation.Device.PageModels.MainPageModel.OpenShippedTransferOrderPageAsync"/>.</summary>
+        </member>
+        <member name="F:D365.Presentation.Device.PageModels.MainPageModel.openPurchaseOrderPageCommand">
+            <summary>The backing field for <see cref="P:D365.Presentation.Device.PageModels.MainPageModel.OpenPurchaseOrderPageCommand"/>.</summary>
+        </member>
+        <member name="P:D365.Presentation.Device.PageModels.MainPageModel.OpenPurchaseOrderPageCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:D365.Presentation.Device.PageModels.MainPageModel.OpenPurchaseOrderPageAsync"/>.</summary>
+        </member>
+        <member name="F:D365.Presentation.Device.PageModels.MainPageModel.openSalesOrderPageCommand">
+            <summary>The backing field for <see cref="P:D365.Presentation.Device.PageModels.MainPageModel.OpenSalesOrderPageCommand"/>.</summary>
+        </member>
+        <member name="P:D365.Presentation.Device.PageModels.MainPageModel.OpenSalesOrderPageCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:D365.Presentation.Device.PageModels.MainPageModel.OpenSalesOrderPageAsync"/>.</summary>
+        </member>
+        <member name="F:D365.Presentation.Device.PageModels.MainPageModel.testFuncCommand">
+            <summary>The backing field for <see cref="P:D365.Presentation.Device.PageModels.MainPageModel.TestFuncCommand"/>.</summary>
+        </member>
+        <member name="P:D365.Presentation.Device.PageModels.MainPageModel.TestFuncCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:D365.Presentation.Device.PageModels.MainPageModel.TestFuncAsync"/>.</summary>
+        </member>
+        <member name="T:D365.Presentation.Device.PageModels.MasterData.SitePageModel">
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:D365.Presentation.Device.PageModels.MasterData.SitePageModel.Sites">
+            <inheritdoc cref="F:D365.Presentation.Device.PageModels.MasterData.SitePageModel._sites"/>
+        </member>
+        <member name="P:D365.Presentation.Device.PageModels.MasterData.SitePageModel.OrgSites">
+            <inheritdoc cref="F:D365.Presentation.Device.PageModels.MasterData.SitePageModel._orgSites"/>
+        </member>
+        <member name="P:D365.Presentation.Device.PageModels.MasterData.SitePageModel.IsBusy">
+            <inheritdoc cref="F:D365.Presentation.Device.PageModels.MasterData.SitePageModel._isBusy"/>
+        </member>
+        <member name="P:D365.Presentation.Device.PageModels.MasterData.SitePageModel.IsRefreshing">
+            <inheritdoc cref="F:D365.Presentation.Device.PageModels.MasterData.SitePageModel._isRefreshing"/>
+        </member>
+        <member name="F:D365.Presentation.Device.PageModels.MasterData.SitePageModel.refreshCommand">
+            <summary>The backing field for <see cref="P:D365.Presentation.Device.PageModels.MasterData.SitePageModel.RefreshCommand"/>.</summary>
+        </member>
+        <member name="P:D365.Presentation.Device.PageModels.MasterData.SitePageModel.RefreshCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:D365.Presentation.Device.PageModels.MasterData.SitePageModel.RefreshAsync"/>.</summary>
+        </member>
+        <member name="T:D365.Presentation.Device.PageModels.MasterData.WarehousePageModel">
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:D365.Presentation.Device.PageModels.MasterData.WarehousePageModel.Warehouses">
+            <inheritdoc cref="F:D365.Presentation.Device.PageModels.MasterData.WarehousePageModel._warehouses"/>
+        </member>
+        <member name="P:D365.Presentation.Device.PageModels.MasterData.WarehousePageModel.OrgWarehouses">
+            <inheritdoc cref="F:D365.Presentation.Device.PageModels.MasterData.WarehousePageModel._orgWarehouses"/>
+        </member>
+        <member name="P:D365.Presentation.Device.PageModels.MasterData.WarehousePageModel.IsBusy">
+            <inheritdoc cref="F:D365.Presentation.Device.PageModels.MasterData.WarehousePageModel._isBusy"/>
+        </member>
+        <member name="P:D365.Presentation.Device.PageModels.MasterData.WarehousePageModel.IsRefreshing">
+            <inheritdoc cref="F:D365.Presentation.Device.PageModels.MasterData.WarehousePageModel._isRefreshing"/>
+        </member>
+        <member name="F:D365.Presentation.Device.PageModels.MasterData.WarehousePageModel.refreshCommand">
+            <summary>The backing field for <see cref="P:D365.Presentation.Device.PageModels.MasterData.WarehousePageModel.RefreshCommand"/>.</summary>
+        </member>
+        <member name="P:D365.Presentation.Device.PageModels.MasterData.WarehousePageModel.RefreshCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:D365.Presentation.Device.PageModels.MasterData.WarehousePageModel.RefreshAsync"/>.</summary>
+        </member>
+        <member name="T:D365.Presentation.Device.PageModels.OnHands.OnHandPageModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:D365.Presentation.Device.PageModels.OnHands.OnHandPageModel.ItemNumber">
+            <inheritdoc cref="F:D365.Presentation.Device.PageModels.OnHands.OnHandPageModel._itemNumber"/>
+        </member>
+        <member name="P:D365.Presentation.Device.PageModels.OnHands.OnHandPageModel.ProductConfigurations">
+            <inheritdoc cref="F:D365.Presentation.Device.PageModels.OnHands.OnHandPageModel._productConfigurations"/>
+        </member>
+        <member name="P:D365.Presentation.Device.PageModels.OnHands.OnHandPageModel.ProductColors">
+            <inheritdoc cref="F:D365.Presentation.Device.PageModels.OnHands.OnHandPageModel._productColors"/>
+        </member>
+        <member name="P:D365.Presentation.Device.PageModels.OnHands.OnHandPageModel.ProductSites">
+            <inheritdoc cref="F:D365.Presentation.Device.PageModels.OnHands.OnHandPageModel._productSites"/>
+        </member>
+        <member name="P:D365.Presentation.Device.PageModels.OnHands.OnHandPageModel.ProductSizes">
+            <inheritdoc cref="F:D365.Presentation.Device.PageModels.OnHands.OnHandPageModel._productSizes"/>
+        </member>
+        <member name="P:D365.Presentation.Device.PageModels.OnHands.OnHandPageModel.ProductStyles">
+            <inheritdoc cref="F:D365.Presentation.Device.PageModels.OnHands.OnHandPageModel._productStyles"/>
+        </member>
+        <member name="P:D365.Presentation.Device.PageModels.OnHands.OnHandPageModel.ProductWarehouses">
+            <inheritdoc cref="F:D365.Presentation.Device.PageModels.OnHands.OnHandPageModel._productWarehouses"/>
+        </member>
+        <member name="P:D365.Presentation.Device.PageModels.OnHands.OnHandPageModel.IsRunning">
+            <inheritdoc cref="F:D365.Presentation.Device.PageModels.OnHands.OnHandPageModel._isRunning"/>
+        </member>
+        <member name="P:D365.Presentation.Device.PageModels.OnHands.OnHandPageModel.OnHandRecords">
+            <inheritdoc cref="F:D365.Presentation.Device.PageModels.OnHands.OnHandPageModel._onHandRecords"/>
+        </member>
+        <member name="F:D365.Presentation.Device.PageModels.OnHands.OnHandPageModel.refreshCollectionCommand">
+            <summary>The backing field for <see cref="P:D365.Presentation.Device.PageModels.OnHands.OnHandPageModel.RefreshCollectionCommand"/>.</summary>
+        </member>
+        <member name="P:D365.Presentation.Device.PageModels.OnHands.OnHandPageModel.RefreshCollectionCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:D365.Presentation.Device.PageModels.OnHands.OnHandPageModel.RefreshCollectionAsync"/>.</summary>
+        </member>
+        <member name="F:D365.Presentation.Device.PageModels.OnHands.OnHandPageModel.clearCommand">
+            <summary>The backing field for <see cref="P:D365.Presentation.Device.PageModels.OnHands.OnHandPageModel.ClearCommand"/>.</summary>
+        </member>
+        <member name="P:D365.Presentation.Device.PageModels.OnHands.OnHandPageModel.ClearCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:D365.Presentation.Device.PageModels.OnHands.OnHandPageModel.Clear"/>.</summary>
+        </member>
+        <member name="T:D365.Presentation.Device.PageModels.Products.ProductColorPageModel">
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:D365.Presentation.Device.PageModels.Products.ProductColorPageModel.Colors">
+            <inheritdoc cref="F:D365.Presentation.Device.PageModels.Products.ProductColorPageModel._colors"/>
+        </member>
+        <member name="P:D365.Presentation.Device.PageModels.Products.ProductColorPageModel.OrgColors">
+            <inheritdoc cref="F:D365.Presentation.Device.PageModels.Products.ProductColorPageModel._orgColors"/>
+        </member>
+        <member name="P:D365.Presentation.Device.PageModels.Products.ProductColorPageModel.IsBusy">
+            <inheritdoc cref="F:D365.Presentation.Device.PageModels.Products.ProductColorPageModel._isBusy"/>
+        </member>
+        <member name="P:D365.Presentation.Device.PageModels.Products.ProductColorPageModel.IsRefreshing">
+            <inheritdoc cref="F:D365.Presentation.Device.PageModels.Products.ProductColorPageModel._isRefreshing"/>
+        </member>
+        <member name="F:D365.Presentation.Device.PageModels.Products.ProductColorPageModel.refreshCommand">
+            <summary>The backing field for <see cref="P:D365.Presentation.Device.PageModels.Products.ProductColorPageModel.RefreshCommand"/>.</summary>
+        </member>
+        <member name="P:D365.Presentation.Device.PageModels.Products.ProductColorPageModel.RefreshCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:D365.Presentation.Device.PageModels.Products.ProductColorPageModel.RefreshAsync"/>.</summary>
+        </member>
+        <member name="T:D365.Presentation.Device.PageModels.Products.ProductConfigurationPageModel">
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:D365.Presentation.Device.PageModels.Products.ProductConfigurationPageModel.Configurations">
+            <inheritdoc cref="F:D365.Presentation.Device.PageModels.Products.ProductConfigurationPageModel._configurations"/>
+        </member>
+        <member name="P:D365.Presentation.Device.PageModels.Products.ProductConfigurationPageModel.OrgConfigurations">
+            <inheritdoc cref="F:D365.Presentation.Device.PageModels.Products.ProductConfigurationPageModel._orgConfigurations"/>
+        </member>
+        <member name="P:D365.Presentation.Device.PageModels.Products.ProductConfigurationPageModel.IsBusy">
+            <inheritdoc cref="F:D365.Presentation.Device.PageModels.Products.ProductConfigurationPageModel._isBusy"/>
+        </member>
+        <member name="P:D365.Presentation.Device.PageModels.Products.ProductConfigurationPageModel.IsRefreshing">
+            <inheritdoc cref="F:D365.Presentation.Device.PageModels.Products.ProductConfigurationPageModel._isRefreshing"/>
+        </member>
+        <member name="F:D365.Presentation.Device.PageModels.Products.ProductConfigurationPageModel.refreshCommand">
+            <summary>The backing field for <see cref="P:D365.Presentation.Device.PageModels.Products.ProductConfigurationPageModel.RefreshCommand"/>.</summary>
+        </member>
+        <member name="P:D365.Presentation.Device.PageModels.Products.ProductConfigurationPageModel.RefreshCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:D365.Presentation.Device.PageModels.Products.ProductConfigurationPageModel.RefreshAsync"/>.</summary>
+        </member>
+        <member name="T:D365.Presentation.Device.PageModels.Products.ProductPageModel">
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:D365.Presentation.Device.PageModels.Products.ProductPageModel.Products">
+            <inheritdoc cref="F:D365.Presentation.Device.PageModels.Products.ProductPageModel._products"/>
+        </member>
+        <member name="P:D365.Presentation.Device.PageModels.Products.ProductPageModel.OrgProducts">
+            <inheritdoc cref="F:D365.Presentation.Device.PageModels.Products.ProductPageModel._orgProducts"/>
+        </member>
+        <member name="P:D365.Presentation.Device.PageModels.Products.ProductPageModel.IsBusy">
+            <inheritdoc cref="F:D365.Presentation.Device.PageModels.Products.ProductPageModel._isBusy"/>
+        </member>
+        <member name="P:D365.Presentation.Device.PageModels.Products.ProductPageModel.IsRefreshing">
+            <inheritdoc cref="F:D365.Presentation.Device.PageModels.Products.ProductPageModel._isRefreshing"/>
+        </member>
+        <member name="F:D365.Presentation.Device.PageModels.Products.ProductPageModel.refreshCommand">
+            <summary>The backing field for <see cref="P:D365.Presentation.Device.PageModels.Products.ProductPageModel.RefreshCommand"/>.</summary>
+        </member>
+        <member name="P:D365.Presentation.Device.PageModels.Products.ProductPageModel.RefreshCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:D365.Presentation.Device.PageModels.Products.ProductPageModel.RefreshAsync"/>.</summary>
+        </member>
+        <member name="T:D365.Presentation.Device.PageModels.Products.ProductSizePageModel">
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:D365.Presentation.Device.PageModels.Products.ProductSizePageModel.Sizes">
+            <inheritdoc cref="F:D365.Presentation.Device.PageModels.Products.ProductSizePageModel._sizes"/>
+        </member>
+        <member name="P:D365.Presentation.Device.PageModels.Products.ProductSizePageModel.OrgSizes">
+            <inheritdoc cref="F:D365.Presentation.Device.PageModels.Products.ProductSizePageModel._orgSizes"/>
+        </member>
+        <member name="P:D365.Presentation.Device.PageModels.Products.ProductSizePageModel.IsBusy">
+            <inheritdoc cref="F:D365.Presentation.Device.PageModels.Products.ProductSizePageModel._isBusy"/>
+        </member>
+        <member name="P:D365.Presentation.Device.PageModels.Products.ProductSizePageModel.IsRefreshing">
+            <inheritdoc cref="F:D365.Presentation.Device.PageModels.Products.ProductSizePageModel._isRefreshing"/>
+        </member>
+        <member name="F:D365.Presentation.Device.PageModels.Products.ProductSizePageModel.refreshCommand">
+            <summary>The backing field for <see cref="P:D365.Presentation.Device.PageModels.Products.ProductSizePageModel.RefreshCommand"/>.</summary>
+        </member>
+        <member name="P:D365.Presentation.Device.PageModels.Products.ProductSizePageModel.RefreshCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:D365.Presentation.Device.PageModels.Products.ProductSizePageModel.RefreshAsync"/>.</summary>
+        </member>
+        <member name="T:D365.Presentation.Device.PageModels.Products.ProductStylePageModel">
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:D365.Presentation.Device.PageModels.Products.ProductStylePageModel.Styles">
+            <inheritdoc cref="F:D365.Presentation.Device.PageModels.Products.ProductStylePageModel._styles"/>
+        </member>
+        <member name="P:D365.Presentation.Device.PageModels.Products.ProductStylePageModel.OrgStyles">
+            <inheritdoc cref="F:D365.Presentation.Device.PageModels.Products.ProductStylePageModel._orgStyles"/>
+        </member>
+        <member name="P:D365.Presentation.Device.PageModels.Products.ProductStylePageModel.IsBusy">
+            <inheritdoc cref="F:D365.Presentation.Device.PageModels.Products.ProductStylePageModel._isBusy"/>
+        </member>
+        <member name="P:D365.Presentation.Device.PageModels.Products.ProductStylePageModel.IsRefreshing">
+            <inheritdoc cref="F:D365.Presentation.Device.PageModels.Products.ProductStylePageModel._isRefreshing"/>
+        </member>
+        <member name="F:D365.Presentation.Device.PageModels.Products.ProductStylePageModel.refreshCommand">
+            <summary>The backing field for <see cref="P:D365.Presentation.Device.PageModels.Products.ProductStylePageModel.RefreshCommand"/>.</summary>
+        </member>
+        <member name="P:D365.Presentation.Device.PageModels.Products.ProductStylePageModel.RefreshCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:D365.Presentation.Device.PageModels.Products.ProductStylePageModel.RefreshAsync"/>.</summary>
+        </member>
+        <member name="T:D365.Presentation.Device.PageModels.PurchaseOrder.PurchaseOrderDetailPageModel">
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:D365.Presentation.Device.PageModels.PurchaseOrder.PurchaseOrderDetailPageModel.Order">
+            <inheritdoc cref="F:D365.Presentation.Device.PageModels.PurchaseOrder.PurchaseOrderDetailPageModel._order"/>
+        </member>
+        <member name="P:D365.Presentation.Device.PageModels.PurchaseOrder.PurchaseOrderDetailPageModel.Lines">
+            <inheritdoc cref="F:D365.Presentation.Device.PageModels.PurchaseOrder.PurchaseOrderDetailPageModel._lines"/>
+        </member>
+        <member name="P:D365.Presentation.Device.PageModels.PurchaseOrder.PurchaseOrderDetailPageModel.IsBusy">
+            <inheritdoc cref="F:D365.Presentation.Device.PageModels.PurchaseOrder.PurchaseOrderDetailPageModel._isBusy"/>
+        </member>
+        <member name="F:D365.Presentation.Device.PageModels.PurchaseOrder.PurchaseOrderDetailPageModel.receiveOrderCommand">
+            <summary>The backing field for <see cref="P:D365.Presentation.Device.PageModels.PurchaseOrder.PurchaseOrderDetailPageModel.ReceiveOrderCommand"/>.</summary>
+        </member>
+        <member name="P:D365.Presentation.Device.PageModels.PurchaseOrder.PurchaseOrderDetailPageModel.ReceiveOrderCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:D365.Presentation.Device.PageModels.PurchaseOrder.PurchaseOrderDetailPageModel.ReceiveOrder"/>.</summary>
+        </member>
+        <member name="T:D365.Presentation.Device.PageModels.PurchaseOrder.PurchaseOrderPageModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:D365.Presentation.Device.PageModels.PurchaseOrder.PurchaseOrderPageModel.Orders">
+            <inheritdoc cref="F:D365.Presentation.Device.PageModels.PurchaseOrder.PurchaseOrderPageModel._orders"/>
+        </member>
+        <member name="P:D365.Presentation.Device.PageModels.PurchaseOrder.PurchaseOrderPageModel.IsBusy">
+            <inheritdoc cref="F:D365.Presentation.Device.PageModels.PurchaseOrder.PurchaseOrderPageModel._isBusy"/>
+        </member>
+        <member name="P:D365.Presentation.Device.PageModels.PurchaseOrder.PurchaseOrderPageModel.IsRefreshing">
+            <inheritdoc cref="F:D365.Presentation.Device.PageModels.PurchaseOrder.PurchaseOrderPageModel._isRefreshing"/>
+        </member>
+        <member name="F:D365.Presentation.Device.PageModels.PurchaseOrder.PurchaseOrderPageModel.refreshCommand">
+            <summary>The backing field for <see cref="P:D365.Presentation.Device.PageModels.PurchaseOrder.PurchaseOrderPageModel.RefreshCommand"/>.</summary>
+        </member>
+        <member name="P:D365.Presentation.Device.PageModels.PurchaseOrder.PurchaseOrderPageModel.RefreshCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:D365.Presentation.Device.PageModels.PurchaseOrder.PurchaseOrderPageModel.RefreshAsync"/>.</summary>
+        </member>
+        <member name="F:D365.Presentation.Device.PageModels.PurchaseOrder.PurchaseOrderPageModel.openDetailsCommand">
+            <summary>The backing field for <see cref="P:D365.Presentation.Device.PageModels.PurchaseOrder.PurchaseOrderPageModel.OpenDetailsCommand"/>.</summary>
+        </member>
+        <member name="P:D365.Presentation.Device.PageModels.PurchaseOrder.PurchaseOrderPageModel.OpenDetailsCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand`1"/> instance wrapping <see cref="M:D365.Presentation.Device.PageModels.PurchaseOrder.PurchaseOrderPageModel.OpenDetailsAsync(D365.Presentation.Device.Core.Records.D365PurchaseOrderHeaderRecord)"/>.</summary>
+        </member>
+        <member name="T:D365.Presentation.Device.PageModels.SalesOrder.SalesOrderDetailPageModel">
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:D365.Presentation.Device.PageModels.SalesOrder.SalesOrderDetailPageModel.Order">
+            <inheritdoc cref="F:D365.Presentation.Device.PageModels.SalesOrder.SalesOrderDetailPageModel._order"/>
+        </member>
+        <member name="P:D365.Presentation.Device.PageModels.SalesOrder.SalesOrderDetailPageModel.Lines">
+            <inheritdoc cref="F:D365.Presentation.Device.PageModels.SalesOrder.SalesOrderDetailPageModel._lines"/>
+        </member>
+        <member name="P:D365.Presentation.Device.PageModels.SalesOrder.SalesOrderDetailPageModel.IsBusy">
+            <inheritdoc cref="F:D365.Presentation.Device.PageModels.SalesOrder.SalesOrderDetailPageModel._isBusy"/>
+        </member>
+        <member name="F:D365.Presentation.Device.PageModels.SalesOrder.SalesOrderDetailPageModel.receiveOrderCommand">
+            <summary>The backing field for <see cref="P:D365.Presentation.Device.PageModels.SalesOrder.SalesOrderDetailPageModel.ReceiveOrderCommand"/>.</summary>
+        </member>
+        <member name="P:D365.Presentation.Device.PageModels.SalesOrder.SalesOrderDetailPageModel.ReceiveOrderCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:D365.Presentation.Device.PageModels.SalesOrder.SalesOrderDetailPageModel.ReceiveOrder"/>.</summary>
+        </member>
+        <member name="T:D365.Presentation.Device.PageModels.SalesOrder.SalesOrderPageModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:D365.Presentation.Device.PageModels.SalesOrder.SalesOrderPageModel.Orders">
+            <inheritdoc cref="F:D365.Presentation.Device.PageModels.SalesOrder.SalesOrderPageModel._orders"/>
+        </member>
+        <member name="P:D365.Presentation.Device.PageModels.SalesOrder.SalesOrderPageModel.IsBusy">
+            <inheritdoc cref="F:D365.Presentation.Device.PageModels.SalesOrder.SalesOrderPageModel._isBusy"/>
+        </member>
+        <member name="P:D365.Presentation.Device.PageModels.SalesOrder.SalesOrderPageModel.IsRefreshing">
+            <inheritdoc cref="F:D365.Presentation.Device.PageModels.SalesOrder.SalesOrderPageModel._isRefreshing"/>
+        </member>
+        <member name="F:D365.Presentation.Device.PageModels.SalesOrder.SalesOrderPageModel.refreshCommand">
+            <summary>The backing field for <see cref="P:D365.Presentation.Device.PageModels.SalesOrder.SalesOrderPageModel.RefreshCommand"/>.</summary>
+        </member>
+        <member name="P:D365.Presentation.Device.PageModels.SalesOrder.SalesOrderPageModel.RefreshCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:D365.Presentation.Device.PageModels.SalesOrder.SalesOrderPageModel.RefreshAsync"/>.</summary>
+        </member>
+        <member name="F:D365.Presentation.Device.PageModels.SalesOrder.SalesOrderPageModel.openDetailsCommand">
+            <summary>The backing field for <see cref="P:D365.Presentation.Device.PageModels.SalesOrder.SalesOrderPageModel.OpenDetailsCommand"/>.</summary>
+        </member>
+        <member name="P:D365.Presentation.Device.PageModels.SalesOrder.SalesOrderPageModel.OpenDetailsCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand`1"/> instance wrapping <see cref="M:D365.Presentation.Device.PageModels.SalesOrder.SalesOrderPageModel.OpenDetailsAsync(D365.Presentation.Device.Core.Records.D365SalesOrderHeaderRecord)"/>.</summary>
+        </member>
+        <member name="T:D365.Presentation.Device.PageModels.TransferOrder.AddTransferOrderPageModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:D365.Presentation.Device.PageModels.TransferOrder.AddTransferOrderPageModel.Order">
+            <inheritdoc cref="F:D365.Presentation.Device.PageModels.TransferOrder.AddTransferOrderPageModel._order"/>
+        </member>
+        <member name="P:D365.Presentation.Device.PageModels.TransferOrder.AddTransferOrderPageModel.Warehouses">
+            <inheritdoc cref="F:D365.Presentation.Device.PageModels.TransferOrder.AddTransferOrderPageModel._warehouses"/>
+        </member>
+        <member name="P:D365.Presentation.Device.PageModels.TransferOrder.AddTransferOrderPageModel.ShippingWarehouseSelected">
+            <inheritdoc cref="F:D365.Presentation.Device.PageModels.TransferOrder.AddTransferOrderPageModel._shippingWarehouseSelected"/>
+        </member>
+        <member name="P:D365.Presentation.Device.PageModels.TransferOrder.AddTransferOrderPageModel.ReceivingWarehouseSelected">
+            <inheritdoc cref="F:D365.Presentation.Device.PageModels.TransferOrder.AddTransferOrderPageModel._receivingWarehouseSelected"/>
+        </member>
+        <member name="P:D365.Presentation.Device.PageModels.TransferOrder.AddTransferOrderPageModel.Lines">
+            <inheritdoc cref="F:D365.Presentation.Device.PageModels.TransferOrder.AddTransferOrderPageModel._lines"/>
+        </member>
+        <member name="P:D365.Presentation.Device.PageModels.TransferOrder.AddTransferOrderPageModel.IsBusy">
+            <inheritdoc cref="F:D365.Presentation.Device.PageModels.TransferOrder.AddTransferOrderPageModel._isBusy"/>
+        </member>
+        <member name="F:D365.Presentation.Device.PageModels.TransferOrder.AddTransferOrderPageModel.loadDimensionsCommand">
+            <summary>The backing field for <see cref="P:D365.Presentation.Device.PageModels.TransferOrder.AddTransferOrderPageModel.LoadDimensionsCommand"/>.</summary>
+        </member>
+        <member name="P:D365.Presentation.Device.PageModels.TransferOrder.AddTransferOrderPageModel.LoadDimensionsCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand`1"/> instance wrapping <see cref="M:D365.Presentation.Device.PageModels.TransferOrder.AddTransferOrderPageModel.LoadDimensionsAsync(D365.Presentation.Device.Models.TransferOrderLineModel)"/>.</summary>
+        </member>
+        <member name="F:D365.Presentation.Device.PageModels.TransferOrder.AddTransferOrderPageModel.addLineCommand">
+            <summary>The backing field for <see cref="P:D365.Presentation.Device.PageModels.TransferOrder.AddTransferOrderPageModel.AddLineCommand"/>.</summary>
+        </member>
+        <member name="P:D365.Presentation.Device.PageModels.TransferOrder.AddTransferOrderPageModel.AddLineCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:D365.Presentation.Device.PageModels.TransferOrder.AddTransferOrderPageModel.AddLine"/>.</summary>
+        </member>
+        <member name="F:D365.Presentation.Device.PageModels.TransferOrder.AddTransferOrderPageModel.removeLineCommand">
+            <summary>The backing field for <see cref="P:D365.Presentation.Device.PageModels.TransferOrder.AddTransferOrderPageModel.RemoveLineCommand"/>.</summary>
+        </member>
+        <member name="P:D365.Presentation.Device.PageModels.TransferOrder.AddTransferOrderPageModel.RemoveLineCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand`1"/> instance wrapping <see cref="M:D365.Presentation.Device.PageModels.TransferOrder.AddTransferOrderPageModel.RemoveLine(D365.Presentation.Device.Models.TransferOrderLineModel)"/>.</summary>
+        </member>
+        <member name="F:D365.Presentation.Device.PageModels.TransferOrder.AddTransferOrderPageModel.saveOrderCommand">
+            <summary>The backing field for <see cref="P:D365.Presentation.Device.PageModels.TransferOrder.AddTransferOrderPageModel.SaveOrderCommand"/>.</summary>
+        </member>
+        <member name="P:D365.Presentation.Device.PageModels.TransferOrder.AddTransferOrderPageModel.SaveOrderCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:D365.Presentation.Device.PageModels.TransferOrder.AddTransferOrderPageModel.SaveOrderAsync"/>.</summary>
+        </member>
+        <member name="T:D365.Presentation.Device.PageModels.TransferOrder.ShippedTransferOrderPageModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:D365.Presentation.Device.PageModels.TransferOrder.ShippedTransferOrderPageModel.Orders">
+            <inheritdoc cref="F:D365.Presentation.Device.PageModels.TransferOrder.ShippedTransferOrderPageModel._orders"/>
+        </member>
+        <member name="P:D365.Presentation.Device.PageModels.TransferOrder.ShippedTransferOrderPageModel.IsBusy">
+            <inheritdoc cref="F:D365.Presentation.Device.PageModels.TransferOrder.ShippedTransferOrderPageModel._isBusy"/>
+        </member>
+        <member name="P:D365.Presentation.Device.PageModels.TransferOrder.ShippedTransferOrderPageModel.IsRefreshing">
+            <inheritdoc cref="F:D365.Presentation.Device.PageModels.TransferOrder.ShippedTransferOrderPageModel._isRefreshing"/>
+        </member>
+        <member name="F:D365.Presentation.Device.PageModels.TransferOrder.ShippedTransferOrderPageModel.refreshCommand">
+            <summary>The backing field for <see cref="P:D365.Presentation.Device.PageModels.TransferOrder.ShippedTransferOrderPageModel.RefreshCommand"/>.</summary>
+        </member>
+        <member name="P:D365.Presentation.Device.PageModels.TransferOrder.ShippedTransferOrderPageModel.RefreshCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:D365.Presentation.Device.PageModels.TransferOrder.ShippedTransferOrderPageModel.RefreshAsync"/>.</summary>
+        </member>
+        <member name="F:D365.Presentation.Device.PageModels.TransferOrder.ShippedTransferOrderPageModel.openDetailsCommand">
+            <summary>The backing field for <see cref="P:D365.Presentation.Device.PageModels.TransferOrder.ShippedTransferOrderPageModel.OpenDetailsCommand"/>.</summary>
+        </member>
+        <member name="P:D365.Presentation.Device.PageModels.TransferOrder.ShippedTransferOrderPageModel.OpenDetailsCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand`1"/> instance wrapping <see cref="M:D365.Presentation.Device.PageModels.TransferOrder.ShippedTransferOrderPageModel.OpenDetailsAsync(D365.Presentation.Device.Models.TransferOrderHeaderModel)"/>.</summary>
+        </member>
+        <member name="T:D365.Presentation.Device.PageModels.TransferOrder.TransferOrderDetailPageModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:D365.Presentation.Device.PageModels.TransferOrder.TransferOrderDetailPageModel.Order">
+            <inheritdoc cref="F:D365.Presentation.Device.PageModels.TransferOrder.TransferOrderDetailPageModel._order"/>
+        </member>
+        <member name="P:D365.Presentation.Device.PageModels.TransferOrder.TransferOrderDetailPageModel.Lines">
+            <inheritdoc cref="F:D365.Presentation.Device.PageModels.TransferOrder.TransferOrderDetailPageModel._lines"/>
+        </member>
+        <member name="P:D365.Presentation.Device.PageModels.TransferOrder.TransferOrderDetailPageModel.IsBusy">
+            <inheritdoc cref="F:D365.Presentation.Device.PageModels.TransferOrder.TransferOrderDetailPageModel._isBusy"/>
+        </member>
+        <member name="F:D365.Presentation.Device.PageModels.TransferOrder.TransferOrderDetailPageModel.receiveOrderCommand">
+            <summary>The backing field for <see cref="P:D365.Presentation.Device.PageModels.TransferOrder.TransferOrderDetailPageModel.ReceiveOrderCommand"/>.</summary>
+        </member>
+        <member name="P:D365.Presentation.Device.PageModels.TransferOrder.TransferOrderDetailPageModel.ReceiveOrderCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:D365.Presentation.Device.PageModels.TransferOrder.TransferOrderDetailPageModel.ReceiveOrder"/>.</summary>
+        </member>
+        <member name="F:D365.Presentation.Device.PageModels.TransferOrder.TransferOrderDetailPageModel.receiveItemCommand">
+            <summary>The backing field for <see cref="P:D365.Presentation.Device.PageModels.TransferOrder.TransferOrderDetailPageModel.ReceiveItemCommand"/>.</summary>
+        </member>
+        <member name="P:D365.Presentation.Device.PageModels.TransferOrder.TransferOrderDetailPageModel.ReceiveItemCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand`1"/> instance wrapping <see cref="M:D365.Presentation.Device.PageModels.TransferOrder.TransferOrderDetailPageModel.ReceiveItemAsync(D365.Presentation.Device.Core.Records.D365TransferOrderLineRecord)"/>.</summary>
+        </member>
+        <member name="T:D365.Presentation.Device.PageModels.TransferOrder.TransferOrdersPageModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:D365.Presentation.Device.PageModels.TransferOrder.TransferOrdersPageModel.Orders">
+            <inheritdoc cref="F:D365.Presentation.Device.PageModels.TransferOrder.TransferOrdersPageModel._orders"/>
+        </member>
+        <member name="P:D365.Presentation.Device.PageModels.TransferOrder.TransferOrdersPageModel.IsBusy">
+            <inheritdoc cref="F:D365.Presentation.Device.PageModels.TransferOrder.TransferOrdersPageModel._isBusy"/>
+        </member>
+        <member name="P:D365.Presentation.Device.PageModels.TransferOrder.TransferOrdersPageModel.IsRefreshing">
+            <inheritdoc cref="F:D365.Presentation.Device.PageModels.TransferOrder.TransferOrdersPageModel._isRefreshing"/>
+        </member>
+        <member name="F:D365.Presentation.Device.PageModels.TransferOrder.TransferOrdersPageModel.refreshCommand">
+            <summary>The backing field for <see cref="P:D365.Presentation.Device.PageModels.TransferOrder.TransferOrdersPageModel.RefreshCommand"/>.</summary>
+        </member>
+        <member name="P:D365.Presentation.Device.PageModels.TransferOrder.TransferOrdersPageModel.RefreshCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:D365.Presentation.Device.PageModels.TransferOrder.TransferOrdersPageModel.RefreshAsync"/>.</summary>
+        </member>
+        <member name="F:D365.Presentation.Device.PageModels.TransferOrder.TransferOrdersPageModel.shipCommand">
+            <summary>The backing field for <see cref="P:D365.Presentation.Device.PageModels.TransferOrder.TransferOrdersPageModel.ShipCommand"/>.</summary>
+        </member>
+        <member name="P:D365.Presentation.Device.PageModels.TransferOrder.TransferOrdersPageModel.ShipCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand`1"/> instance wrapping <see cref="M:D365.Presentation.Device.PageModels.TransferOrder.TransferOrdersPageModel.ShipAsync(D365.Presentation.Device.Models.TransferOrderHeaderModel)"/>.</summary>
+        </member>
+        <member name="T:D365.Presentation.Device.Services.ConnectivityService">
+            <inheritdoc/>
+        </member>
+        <member name="P:D365.Presentation.Device.Services.ConnectivityService.IsConnected">
+            <inheritdoc cref="F:D365.Presentation.Device.Services.ConnectivityService._isConnected"/>
+        </member>
+        <member name="T:D365.Presentation.Device.Resource">
+            <summary>
+            Android Resource Designer class.
+            Exposes the Android Resource designer assembly into the project Namespace.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_Button.TextColorTo(Microsoft.Maui.Controls.Button,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing,System.Threading.CancellationToken)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <param name = "token"><see cref = "T:System.Threading.CancellationToken"/></param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_DatePicker.TextColorTo(Microsoft.Maui.Controls.DatePicker,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing,System.Threading.CancellationToken)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <param name = "token"><see cref = "T:System.Threading.CancellationToken"/></param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_Editor.TextColorTo(Microsoft.Maui.Controls.Editor,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing,System.Threading.CancellationToken)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <param name = "token"><see cref = "T:System.Threading.CancellationToken"/></param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_Entry.TextColorTo(Microsoft.Maui.Controls.Entry,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing,System.Threading.CancellationToken)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <param name = "token"><see cref = "T:System.Threading.CancellationToken"/></param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_InputView.TextColorTo(Microsoft.Maui.Controls.InputView,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing,System.Threading.CancellationToken)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <param name = "token"><see cref = "T:System.Threading.CancellationToken"/></param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_Label.TextColorTo(Microsoft.Maui.Controls.Label,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing,System.Threading.CancellationToken)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <param name = "token"><see cref = "T:System.Threading.CancellationToken"/></param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_Picker.TextColorTo(Microsoft.Maui.Controls.Picker,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing,System.Threading.CancellationToken)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <param name = "token"><see cref = "T:System.Threading.CancellationToken"/></param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_RadioButton.TextColorTo(Microsoft.Maui.Controls.RadioButton,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing,System.Threading.CancellationToken)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <param name = "token"><see cref = "T:System.Threading.CancellationToken"/></param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_SearchBar.TextColorTo(Microsoft.Maui.Controls.SearchBar,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing,System.Threading.CancellationToken)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <param name = "token"><see cref = "T:System.Threading.CancellationToken"/></param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_TimePicker.TextColorTo(Microsoft.Maui.Controls.TimePicker,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing,System.Threading.CancellationToken)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <param name = "token"><see cref = "T:System.Threading.CancellationToken"/></param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.Messaging.__Internals.__IMessengerExtensions">
+            <summary>
+            A helper type with generated registration stubs for types implementing <see cref="T:CommunityToolkit.Mvvm.Messaging.IRecipient`1"/>.
+            </summary>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="M:CommunityToolkit.Mvvm.Messaging.__Internals.__IMessengerExtensions.CreateAllMessagesRegistrator(D365.Presentation.Device.PageModels.PurchaseOrder.PurchaseOrderDetailPageModel)">
+            <summary>
+            Creates a message registration stub for <see cref="T:D365.Presentation.Device.PageModels.PurchaseOrder.PurchaseOrderDetailPageModel"/> objects.
+            </summary>
+            <param name="_">Dummy parameter, only used to disambiguate the method signature.</param>
+            <returns>A message registration stub for <see cref="T:D365.Presentation.Device.PageModels.PurchaseOrder.PurchaseOrderDetailPageModel"/> objects.</returns>
+        </member>
+        <member name="M:CommunityToolkit.Mvvm.Messaging.__Internals.__IMessengerExtensions.CreateAllMessagesRegistratorWithToken``1(D365.Presentation.Device.PageModels.PurchaseOrder.PurchaseOrderDetailPageModel)">
+            <summary>
+            Creates a message registration stub for <see cref="T:D365.Presentation.Device.PageModels.PurchaseOrder.PurchaseOrderDetailPageModel"/> objects.
+            </summary>
+            <typeparam name="TToken">The type of tokens that will be used to register messages.</typeparam>
+            <param name="_">Dummy parameter, only used to disambiguate the method signature.</param>
+            <returns>A message registration stub for <see cref="T:D365.Presentation.Device.PageModels.PurchaseOrder.PurchaseOrderDetailPageModel"/> objects.</returns>
+        </member>
+        <member name="M:CommunityToolkit.Mvvm.Messaging.__Internals.__IMessengerExtensions.CreateAllMessagesRegistrator(D365.Presentation.Device.PageModels.SalesOrder.SalesOrderDetailPageModel)">
+            <summary>
+            Creates a message registration stub for <see cref="T:D365.Presentation.Device.PageModels.SalesOrder.SalesOrderDetailPageModel"/> objects.
+            </summary>
+            <param name="_">Dummy parameter, only used to disambiguate the method signature.</param>
+            <returns>A message registration stub for <see cref="T:D365.Presentation.Device.PageModels.SalesOrder.SalesOrderDetailPageModel"/> objects.</returns>
+        </member>
+        <member name="M:CommunityToolkit.Mvvm.Messaging.__Internals.__IMessengerExtensions.CreateAllMessagesRegistratorWithToken``1(D365.Presentation.Device.PageModels.SalesOrder.SalesOrderDetailPageModel)">
+            <summary>
+            Creates a message registration stub for <see cref="T:D365.Presentation.Device.PageModels.SalesOrder.SalesOrderDetailPageModel"/> objects.
+            </summary>
+            <typeparam name="TToken">The type of tokens that will be used to register messages.</typeparam>
+            <param name="_">Dummy parameter, only used to disambiguate the method signature.</param>
+            <returns>A message registration stub for <see cref="T:D365.Presentation.Device.PageModels.SalesOrder.SalesOrderDetailPageModel"/> objects.</returns>
+        </member>
+        <member name="M:CommunityToolkit.Mvvm.Messaging.__Internals.__IMessengerExtensions.CreateAllMessagesRegistrator(D365.Presentation.Device.PageModels.TransferOrder.TransferOrderDetailPageModel)">
+            <summary>
+            Creates a message registration stub for <see cref="T:D365.Presentation.Device.PageModels.TransferOrder.TransferOrderDetailPageModel"/> objects.
+            </summary>
+            <param name="_">Dummy parameter, only used to disambiguate the method signature.</param>
+            <returns>A message registration stub for <see cref="T:D365.Presentation.Device.PageModels.TransferOrder.TransferOrderDetailPageModel"/> objects.</returns>
+        </member>
+        <member name="M:CommunityToolkit.Mvvm.Messaging.__Internals.__IMessengerExtensions.CreateAllMessagesRegistratorWithToken``1(D365.Presentation.Device.PageModels.TransferOrder.TransferOrderDetailPageModel)">
+            <summary>
+            Creates a message registration stub for <see cref="T:D365.Presentation.Device.PageModels.TransferOrder.TransferOrderDetailPageModel"/> objects.
+            </summary>
+            <typeparam name="TToken">The type of tokens that will be used to register messages.</typeparam>
+            <param name="_">Dummy parameter, only used to disambiguate the method signature.</param>
+            <returns>A message registration stub for <see cref="T:D365.Presentation.Device.PageModels.TransferOrder.TransferOrderDetailPageModel"/> objects.</returns>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Data">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Data" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Selected">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Selected" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.IsEnabled">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "IsEnabled" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Dimension">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Dimension" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Id">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Id" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.DataAreaId">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "DataAreaId" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.TransferOrderNumber">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "TransferOrderNumber" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.ShippingWarehouseId">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "ShippingWarehouseId" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.ReceivingWarehouseId">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "ReceivingWarehouseId" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.RequestedReceiptDate">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "RequestedReceiptDate" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.TransferOrderStatus">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "TransferOrderStatus" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.ShouldShowSwipeView">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "ShouldShowSwipeView" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Item">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Item" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Quantity">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Quantity" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Color">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Color" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Style">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Style" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Size">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Size" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Configuration">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Configuration" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.IsAppEnabled">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "IsAppEnabled" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.ClientIdEntry">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "ClientIdEntry" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.SecretKeyEntry">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "SecretKeyEntry" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.D365UrlEntry">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "D365UrlEntry" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.TenantIdEntry">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "TenantIdEntry" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.IsBusy">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "IsBusy" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.UserOrEmailEntry">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "UserOrEmailEntry" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.PasswordEntry">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "PasswordEntry" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.RememberMeCheckbox">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "RememberMeCheckbox" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.IsPasswordHidden">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "IsPasswordHidden" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.PasswordIcon">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "PasswordIcon" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Sites">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Sites" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.OrgSites">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "OrgSites" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.IsRefreshing">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "IsRefreshing" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Warehouses">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Warehouses" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.OrgWarehouses">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "OrgWarehouses" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.ItemNumber">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "ItemNumber" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.ProductConfigurations">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "ProductConfigurations" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.ProductColors">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "ProductColors" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.ProductSites">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "ProductSites" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.ProductSizes">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "ProductSizes" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.ProductStyles">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "ProductStyles" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.ProductWarehouses">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "ProductWarehouses" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.IsRunning">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "IsRunning" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.OnHandRecords">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "OnHandRecords" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Colors">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Colors" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.OrgColors">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "OrgColors" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Configurations">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Configurations" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.OrgConfigurations">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "OrgConfigurations" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Products">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Products" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.OrgProducts">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "OrgProducts" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Sizes">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Sizes" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.OrgSizes">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "OrgSizes" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Styles">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Styles" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.OrgStyles">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "OrgStyles" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Order">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Order" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Lines">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Lines" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Orders">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Orders" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.ShippingWarehouseSelected">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "ShippingWarehouseSelected" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.ReceivingWarehouseSelected">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "ReceivingWarehouseSelected" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.IsConnected">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "IsConnected" generated properties.</summary>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Data">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Data" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Selected">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Selected" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.IsEnabled">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "IsEnabled" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Dimension">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Dimension" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Id">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Id" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.DataAreaId">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "DataAreaId" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.TransferOrderNumber">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "TransferOrderNumber" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.ShippingWarehouseId">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "ShippingWarehouseId" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.ReceivingWarehouseId">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "ReceivingWarehouseId" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.RequestedReceiptDate">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "RequestedReceiptDate" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.TransferOrderStatus">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "TransferOrderStatus" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.ShouldShowSwipeView">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "ShouldShowSwipeView" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Item">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Item" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Quantity">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Quantity" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Color">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Color" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Style">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Style" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Size">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Size" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Configuration">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Configuration" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.IsAppEnabled">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "IsAppEnabled" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.ClientIdEntry">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "ClientIdEntry" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.SecretKeyEntry">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "SecretKeyEntry" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.D365UrlEntry">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "D365UrlEntry" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.TenantIdEntry">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "TenantIdEntry" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.IsBusy">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "IsBusy" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.UserOrEmailEntry">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "UserOrEmailEntry" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.PasswordEntry">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "PasswordEntry" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.RememberMeCheckbox">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "RememberMeCheckbox" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.IsPasswordHidden">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "IsPasswordHidden" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.PasswordIcon">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "PasswordIcon" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Sites">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Sites" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.OrgSites">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "OrgSites" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.IsRefreshing">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "IsRefreshing" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Warehouses">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Warehouses" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.OrgWarehouses">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "OrgWarehouses" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.ItemNumber">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "ItemNumber" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.ProductConfigurations">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "ProductConfigurations" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.ProductColors">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "ProductColors" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.ProductSites">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "ProductSites" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.ProductSizes">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "ProductSizes" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.ProductStyles">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "ProductStyles" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.ProductWarehouses">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "ProductWarehouses" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.IsRunning">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "IsRunning" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.OnHandRecords">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "OnHandRecords" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Colors">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Colors" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.OrgColors">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "OrgColors" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Configurations">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Configurations" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.OrgConfigurations">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "OrgConfigurations" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Products">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Products" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.OrgProducts">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "OrgProducts" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Sizes">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Sizes" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.OrgSizes">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "OrgSizes" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Styles">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Styles" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.OrgStyles">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "OrgStyles" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Order">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Order" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Lines">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Lines" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Orders">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Orders" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.ShippingWarehouseSelected">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "ShippingWarehouseSelected" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.ReceivingWarehouseSelected">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "ReceivingWarehouseSelected" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.IsConnected">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "IsConnected" generated properties.</summary>
+        </member>
+    </members>
+</doc>

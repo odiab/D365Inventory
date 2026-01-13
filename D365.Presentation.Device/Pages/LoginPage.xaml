@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<ContentPage
+    x:Class="D365.Presentation.Device.Pages.LoginPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:pageModels="clr-namespace:D365.Presentation.Device.PageModels"
+    Title="Login"
+    x:DataType="pageModels:LoginPageModel"
+    Shell.NavBarIsVisible="False">
+
+    <Grid>
+        <ScrollView>
+            <VerticalStackLayout
+                Padding="20"
+                Spacing="5"
+                VerticalOptions="Center">
+
+                <!--  App Logo  -->
+                <Image
+                    HeightRequest="200"
+                    HorizontalOptions="Center"
+                    Source="logo.png"
+                    WidthRequest="200" />
+
+                <!--  Email / Username Entry  -->
+                <Entry
+                    Keyboard="Email"
+                    Placeholder="Email or Username"
+                    Text="{Binding UserOrEmailEntry}" />
+
+                <!--  Password Entry with Toggle  -->
+                <Grid>
+                    <Entry
+                        IsPassword="{Binding IsPasswordHidden}"
+                        Placeholder="Password"
+                        Text="{Binding PasswordEntry}" />
+
+                    <ImageButton
+                        Padding="10"
+                        BackgroundColor="Transparent"
+                        Command="{Binding TogglePasswordVisibilityCommand}"
+                        HeightRequest="10"
+                        HorizontalOptions="End"
+                        Source="{Binding PasswordIcon}"
+                        WidthRequest="10" />
+                </Grid>
+
+                <!--  Login Button  -->
+                <Button Command="{Binding LoginCommand}" Text="Login" />
+
+
+            </VerticalStackLayout>
+
+        </ScrollView>
+
+        <!--#region BoxView-->
+        <Grid Opacity="0.5">
+            <BoxView
+                HorizontalOptions="Fill"
+                IsVisible="{Binding IsBusy}"
+                Opacity="0.6"
+                VerticalOptions="Fill"
+                Color="Black" />
+        </Grid>
+
+        <!--#endregion-->
+
+
+        <!--  Loading Overlay  -->
+        <ActivityIndicator
+            BackgroundColor="Transparent"
+            HorizontalOptions="Center"
+            IsRunning="{Binding IsBusy}"
+            IsVisible="{Binding IsBusy}"
+            VerticalOptions="Center"
+            Color="Black" />
+
+    </Grid>
+
+
+
+
+</ContentPage>

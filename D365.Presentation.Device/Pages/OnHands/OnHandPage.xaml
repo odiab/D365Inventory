@@ -1,0 +1,313 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<ContentPage
+    x:Class="D365.Presentation.Device.Pages.OnHandPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:converters="clr-namespace:D365.Presentation.Device.Converters"
+    xmlns:handlers="clr-namespace:D365.Presentation.Device.Handlers"
+    xmlns:onHands="clr-namespace:D365.Presentation.Device.PageModels.OnHands"
+    xmlns:records="clr-namespace:D365.Presentation.Device.Core.Records;assembly=D365.Presentation.Device.Core"
+    Title="On Hand"
+    x:DataType="onHands:OnHandPageModel">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <converters:NullToBoolConverter x:Key="NullToBoolConverter" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <Shell.SearchHandler>
+        <handlers:GenericSearchHandler
+            DisplayMemberName="."
+            Query="{Binding ItemNumber}"
+            SearchPlaceholder="Search item number..."
+            SearchResults="{Binding OnHandRecords}" />
+    </Shell.SearchHandler>
+
+
+    <Grid>
+
+        <!--#region Content-->
+
+        <ScrollView>
+
+            <Grid RowDefinitions="Auto, *">
+
+                <!--#region Query-->
+
+                <Grid
+                    Grid.Row="0"
+                    Padding="10"
+                    ColumnDefinitions="Auto,*, Auto, Auto"
+                    ColumnSpacing="10"
+                    RowDefinitions="Auto, Auto, Auto, Auto, Auto, Auto"
+                    RowSpacing="5">
+
+                    <!--#region Row 1 [Configuration]-->
+                    <Label
+                        Grid.Row="0"
+                        Grid.Column="0"
+                        FontAttributes="Bold"
+                        Text="Configuration"
+                        VerticalOptions="Center" />
+
+                    <Picker
+                        Grid.Row="0"
+                        Grid.Column="1"
+                        IsEnabled="{Binding ProductConfigurations.IsEnabled}"
+                        ItemDisplayBinding="{Binding ProductConfigurationId}"
+                        ItemsSource="{Binding ProductConfigurations.Data, Mode=OneWay}"
+                        SelectedIndexChanged="OnSelectedIndexChanged"
+                        SelectedItem="{Binding ProductConfigurations.Selected, Mode=OneWay}"
+                        VerticalOptions="Center" />
+
+                    <Label
+                        Grid.Row="0"
+                        Grid.Column="2"
+                        FontAttributes="Bold"
+                        Text="Dimension"
+                        VerticalOptions="Center" />
+
+                    <CheckBox
+                        Grid.Row="0"
+                        Grid.Column="3"
+                        CheckedChanged="OnCheckedChanged"
+                        IsChecked="{Binding ProductConfigurations.Dimension}" />
+
+                    <!--#endregion-->
+
+                    <!--#region Row 2 [Size]-->
+                    <Label
+                        Grid.Row="1"
+                        Grid.Column="0"
+                        FontAttributes="Bold"
+                        Text="Size"
+                        VerticalOptions="Center" />
+
+                    <Picker
+                        Grid.Row="1"
+                        Grid.Column="1"
+                        HorizontalOptions="FillAndExpand"
+                        IsEnabled="{Binding ProductSizes.IsEnabled}"
+                        ItemDisplayBinding="{Binding SizeId}"
+                        ItemsSource="{Binding ProductSizes.Data}"
+                        SelectedIndexChanged="OnSelectedIndexChanged"
+                        SelectedItem="{Binding ProductSizes.Selected}"
+                        VerticalOptions="Center" />
+
+
+                    <Label
+                        Grid.Row="1"
+                        Grid.Column="2"
+                        FontAttributes="Bold"
+                        Text="Dimension"
+                        VerticalOptions="Center" />
+
+                    <CheckBox
+                        Grid.Row="1"
+                        Grid.Column="3"
+                        CheckedChanged="OnCheckedChanged"
+                        IsChecked="{Binding ProductSizes.Dimension}" />
+
+                    <!--#endregion-->
+
+                    <!--#region Row 3 [Color]-->
+                    <Label
+                        Grid.Row="2"
+                        Grid.Column="0"
+                        FontAttributes="Bold"
+                        Text="Color"
+                        VerticalOptions="Center" />
+
+                    <Picker
+                        Grid.Row="2"
+                        Grid.Column="1"
+                        IsEnabled="{Binding ProductColors.IsEnabled}"
+                        ItemDisplayBinding="{Binding ColorId}"
+                        ItemsSource="{Binding ProductColors.Data}"
+                        SelectedIndexChanged="OnSelectedIndexChanged"
+                        SelectedItem="{Binding ProductColors.Selected}"
+                        VerticalOptions="Center" />
+
+                    <Label
+                        Grid.Row="2"
+                        Grid.Column="2"
+                        FontAttributes="Bold"
+                        Text="Dimension"
+                        VerticalOptions="Center" />
+
+                    <CheckBox
+                        Grid.Row="2"
+                        Grid.Column="3"
+                        CheckedChanged="OnCheckedChanged"
+                        IsChecked="{Binding ProductColors.Dimension}" />
+
+                    <!--#endregion-->
+
+                    <!--#region Row 4 [Style]-->
+                    <Label
+                        Grid.Row="3"
+                        Grid.Column="0"
+                        FontAttributes="Bold"
+                        Text="Style"
+                        VerticalOptions="Center" />
+
+                    <Picker
+                        Grid.Row="3"
+                        Grid.Column="1"
+                        IsEnabled="{Binding ProductStyles.IsEnabled}"
+                        ItemDisplayBinding="{Binding StyleId}"
+                        ItemsSource="{Binding ProductStyles.Data}"
+                        SelectedIndexChanged="OnSelectedIndexChanged"
+                        SelectedItem="{Binding ProductStyles.Selected}"
+                        VerticalOptions="Center" />
+
+                    <Label
+                        Grid.Row="3"
+                        Grid.Column="2"
+                        FontAttributes="Bold"
+                        Text="Dimension"
+                        VerticalOptions="Center" />
+
+                    <CheckBox
+                        Grid.Row="3"
+                        Grid.Column="3"
+                        CheckedChanged="OnCheckedChanged"
+                        IsChecked="{Binding ProductStyles.Dimension}" />
+
+                    <!--#endregion-->
+
+                    <!--#region Row 5 [Site]-->
+                    <Label
+                        Grid.Row="4"
+                        Grid.Column="0"
+                        FontAttributes="Bold"
+                        Text="Sites"
+                        VerticalOptions="Center" />
+
+                    <Picker
+                        Grid.Row="4"
+                        Grid.Column="1"
+                        IsEnabled="{Binding ProductSites.IsEnabled}"
+                        ItemDisplayBinding="{Binding SiteId}"
+                        ItemsSource="{Binding ProductSites.Data}"
+                        SelectedIndexChanged="OnSelectedIndexChanged"
+                        SelectedItem="{Binding ProductSites.Selected}"
+                        VerticalOptions="Center" />
+
+                    <Label
+                        Grid.Row="4"
+                        Grid.Column="2"
+                        FontAttributes="Bold"
+                        Text="Dimension"
+                        VerticalOptions="Center" />
+
+                    <CheckBox
+                        Grid.Row="4"
+                        Grid.Column="3"
+                        CheckedChanged="OnCheckedChanged"
+                        IsChecked="{Binding ProductSites.Dimension}" />
+
+                    <!--#endregion-->
+
+                    <!--#region Row 6 [Warehouse]-->
+                    <Label
+                        Grid.Row="5"
+                        Grid.Column="0"
+                        FontAttributes="Bold"
+                        Text="Warehouse"
+                        VerticalOptions="Center" />
+
+                    <Picker
+                        Grid.Row="5"
+                        Grid.Column="1"
+                        IsEnabled="{Binding ProductWarehouses.IsEnabled}"
+                        ItemDisplayBinding="{Binding WarehouseName}"
+                        ItemsSource="{Binding ProductWarehouses.Data}"
+                        SelectedIndexChanged="OnSelectedIndexChanged"
+                        SelectedItem="{Binding ProductWarehouses.Selected}"
+                        VerticalOptions="Center" />
+
+                    <Label
+                        Grid.Row="5"
+                        Grid.Column="2"
+                        FontAttributes="Bold"
+                        Text="Dimension"
+                        VerticalOptions="Center" />
+
+                    <CheckBox
+                        Grid.Row="5"
+                        Grid.Column="3"
+                        CheckedChanged="OnCheckedChanged"
+                        IsChecked="{Binding ProductWarehouses.Dimension}" />
+
+                    <!--#endregion-->
+
+                </Grid>
+
+                <!--#endregion-->
+
+                <!--#region Result-->
+
+                <CollectionView Grid.Row="1" ItemsSource="{Binding OnHandRecords}">
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate x:DataType="records:D365WarehouseOnHandRecord">
+
+                            <Border
+                                Margin="10"
+                                Padding="10"
+                                StrokeShape="RoundRectangle 5">
+                                <VerticalStackLayout>
+                                    <Label
+                                        FontAttributes="Bold"
+                                        IsVisible="{Binding ItemNumber, Converter={StaticResource NullToBoolConverter}}"
+                                        Text="{Binding ItemNumber}" />
+                                    <Label IsVisible="{Binding ProductConfigurationId, Converter={StaticResource NullToBoolConverter}}" Text="{Binding ProductConfigurationId}" />
+                                    <Label IsVisible="{Binding ProductColorId, Converter={StaticResource NullToBoolConverter}}" Text="{Binding ProductColorId}" />
+                                    <Label IsVisible="{Binding ProductSizeId, Converter={StaticResource NullToBoolConverter}}" Text="{Binding ProductSizeId}" />
+                                    <Label IsVisible="{Binding ProductStyleId, Converter={StaticResource NullToBoolConverter}}" Text="{Binding ProductStyleId}" />
+                                    <Label IsVisible="{Binding InventoryWarehouseId, Converter={StaticResource NullToBoolConverter}}" Text="{Binding InventoryWarehouseId}" />
+                                    <Label IsVisible="{Binding InventorySiteId, Converter={StaticResource NullToBoolConverter}}" Text="{Binding InventorySiteId}" />
+                                    <Label IsVisible="{Binding TotalAvailableQuantity, Converter={StaticResource NullToBoolConverter}}" Text="{Binding TotalAvailableQuantity}" />
+                                </VerticalStackLayout>
+                            </Border>
+
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+
+                <!--#endregion-->
+
+            </Grid>
+
+        </ScrollView>
+
+        <!--#endregion-->
+
+        <!--#region BoxView-->
+        <Grid Opacity="0.6">
+            <BoxView
+                HorizontalOptions="Fill"
+                IsVisible="{Binding IsRunning}"
+                Opacity="0.6"
+                VerticalOptions="Fill"
+                Color="Black" />
+        </Grid>
+
+        <!--#endregion-->
+
+
+        <!--  Loading Overlay  -->
+        <ActivityIndicator
+            BackgroundColor="Transparent"
+            HorizontalOptions="Center"
+            IsRunning="{Binding IsRunning}"
+            IsVisible="{Binding IsRunning}"
+            VerticalOptions="Center"
+            Color="Black" />
+
+    </Grid>
+
+
+</ContentPage>

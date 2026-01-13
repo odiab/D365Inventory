@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<ContentPage
+    x:Class="D365.Presentation.Device.Pages.PurchaseOrder.PurchaseOrderPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:purchaseOrder="clr-namespace:D365.Presentation.Device.PageModels.PurchaseOrder"
+    xmlns:records="clr-namespace:D365.Presentation.Device.Core.Records;assembly=D365.Presentation.Device.Core"
+    Title="Purchase Orders"
+    x:DataType="purchaseOrder:PurchaseOrderPageModel">
+
+
+    <Grid>
+
+        <RefreshView Command="{Binding RefreshCommand}" IsRefreshing="{Binding IsRefreshing}">
+
+            <CollectionView ItemsSource="{Binding Orders}">
+
+                <CollectionView.ItemTemplate>
+                    <DataTemplate x:DataType="records:D365PurchaseOrderHeaderRecord">
+
+                        <SwipeView>
+                            <SwipeView.LeftItems>
+                                <SwipeItems>
+                                    <SwipeItem
+                                        BackgroundColor="LightBlue"
+                                        Command="{Binding Source={RelativeSource AncestorType={x:Type purchaseOrder:PurchaseOrderPageModel}}, Path=OpenDetailsCommand}"
+                                        CommandParameter="{Binding .}"
+                                        Text="Details" />
+                                </SwipeItems>
+                            </SwipeView.LeftItems>
+
+                            <Border
+                                Margin="5"
+                                Padding="10"
+                                StrokeShape="RoundRectangle 5">
+                                <VerticalStackLayout>
+                                    <Label FontAttributes="Bold" Text="{Binding PurchaseOrderNumber, StringFormat='Order Number: {0}'}" />
+                                    <Label Text="{Binding OrderVendorAccountNumber, StringFormat='Vendor Account {0}'}" />
+                                    <Label Text="{Binding InvoiceVendorAccountNumber, StringFormat='Invoice Account {0}'}" />
+                                    <Label Text="{Binding PurchaseOrderName, StringFormat='Vendor Name: {0}'}" />
+                                    <Label Text="{Binding AccountingDate, StringFormat='Request Receipt Date: {0:d}'}" />
+                                    <Label Text="{Binding DocumentApprovalStatus, StringFormat='Approval Status: {0}'}" />
+                                </VerticalStackLayout>
+                            </Border>
+                        </SwipeView>
+
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+
+            </CollectionView>
+
+        </RefreshView>
+
+        <!--#region BoxView-->
+        <Grid Opacity="0.5">
+            <BoxView
+                HorizontalOptions="Fill"
+                IsVisible="{Binding IsBusy}"
+                Opacity="0.6"
+                VerticalOptions="Fill"
+                Color="Black" />
+        </Grid>
+
+        <!--#endregion-->
+
+
+        <!--  Loading Overlay  -->
+        <ActivityIndicator
+            BackgroundColor="Transparent"
+            HorizontalOptions="Center"
+            IsRunning="{Binding IsBusy}"
+            IsVisible="{Binding IsBusy}"
+            VerticalOptions="Center"
+            Color="Black" />
+
+
+    </Grid>
+</ContentPage>
