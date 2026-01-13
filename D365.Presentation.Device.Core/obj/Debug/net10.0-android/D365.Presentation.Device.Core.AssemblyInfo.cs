@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("D365.Presentation.Device.Core")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b04adac9a1c3cc7d1bc95af6fdf6369efd3f760c")]
 [assembly: System.Reflection.AssemblyProductAttribute("D365.Presentation.Device.Core")]
 [assembly: System.Reflection.AssemblyTitleAttribute("D365.Presentation.Device.Core")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

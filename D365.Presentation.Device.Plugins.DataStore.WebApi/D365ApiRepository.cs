@@ -326,7 +326,7 @@ public class D365ApiRepository(HttpClient client, IMemoryCache cache) : ID365Rep
 
         try
         {
-            var uri = new Uri(new Uri(baseUrl), $"/data/SalesOrderHeadersV3?$filter=SalesOrderProcessingStatus eq Microsoft.Dynamics.DataEntities.SalesOrderProcessingStatus'Confirmed' and SalesOrderStatus eq Microsoft.Dynamics.DataEntities.SalesStatus'Backorder'&$expand=SalesOrderLines");
+            var uri = new Uri(new Uri(baseUrl), $"/data/SalesOrderHeadersV3?$filter=SalesOrderStatus eq Microsoft.Dynamics.DataEntities.SalesStatus'Backorder'&$expand=SalesOrderLines");
             var result = await LoadAsync<D365SalesOrderHeaderRecord>(uri);
 
             value = result.Data?.OrderBy(o => o.ConfirmedReceiptDate).ToArray();

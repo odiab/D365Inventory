@@ -78,16 +78,14 @@
                                         Text="{Binding ProductConfigurationId, StringFormat='Configuration: {0}'}" />
                                     <Label
                                         FontAttributes="Bold"
-                                        IsVisible="{Binding ProductColorId, Converter={StaticResource NullToBoolConverter}}"
-                                        Text="{Binding ProductColorId, StringFormat='Color: {0}'}" />
+                                        Text="{Binding LineDescription, StringFormat='Product Name: {0}'}" />
                                     <Label
                                         FontAttributes="Bold"
-                                        IsVisible="{Binding ProductSizeId, Converter={StaticResource NullToBoolConverter}}"
-                                        Text="{Binding ProductSizeId, StringFormat='Size: {0}'}" />
+                                        Text="{Binding SalesUnitSymbol, StringFormat='Unit: {0}'}" />
                                     <Label
                                         FontAttributes="Bold"
-                                        IsVisible="{Binding ProductStyleId, Converter={StaticResource NullToBoolConverter}}"
-                                        Text="{Binding ProductStyleId, StringFormat='Style: {0}'}" />
+                                        Text="{Binding LineNumber, StringFormat='Line Number: {0}'}" />
+
                                 </VerticalStackLayout>
 
                                 <FlexLayout JustifyContent="Center">

@@ -16,3 +16,4 @@ D:\DevOpts\2026\D365InventoryAppSolution\D365.Presentation.Device.Plugins.DataSt
 D:\DevOpts\2026\D365InventoryAppSolution\D365.Presentation.Device.Plugins.DataStore.WebApi\bin\Debug\net10.0-maccatalyst\D365.Presentation.Device.UseCase.pdb
 D:\DevOpts\2026\D365InventoryAppSolution\D365.Presentation.Device.Plugins.DataStore.WebApi\bin\Debug\net10.0-maccatalyst\D365.Presentation.Device.Core.pdb
 D:\DevOpts\2026\D365InventoryAppSolution\D365.Presentation.Device.Plugins.DataStore.WebApi\obj\Debug\net10.0-maccatalyst\D365.Pre.664CFC24.Up2Date
+D:\DevOpts\2026\D365InventoryAppSolution\D365.Presentation.Device.Plugins.DataStore.WebApi\obj\Debug\net10.0-maccatalyst\D365.Presentation.Device.Plugins.DataStore.WebApi.sourcelink.json

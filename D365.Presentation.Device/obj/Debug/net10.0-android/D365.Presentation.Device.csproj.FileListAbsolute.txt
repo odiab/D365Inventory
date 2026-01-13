@@ -1748,3 +1748,4 @@ D:\DevOpts\2026\D365InventoryAppSolution\D365.Presentation.Device\obj\Debug\net1
 D:\DevOpts\2026\D365InventoryAppSolution\D365.Presentation.Device\obj\Debug\net10.0-android\assets\FluentUI.cs
 D:\DevOpts\2026\D365InventoryAppSolution\D365.Presentation.Device\obj\Debug\net10.0-android\assets\Montserrat-Regular.ttf
 D:\DevOpts\2026\D365InventoryAppSolution\D365.Presentation.Device\obj\Debug\net10.0-android\assets\Montserrat-SemiBold.ttf
+D:\DevOpts\2026\D365InventoryAppSolution\D365.Presentation.Device\obj\Debug\net10.0-android\D365.Presentation.Device.sourcelink.json
