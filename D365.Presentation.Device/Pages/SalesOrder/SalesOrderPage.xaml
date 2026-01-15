@@ -4,53 +4,76 @@
     x:Class="D365.Presentation.Device.Pages.SalesOrder.SalesOrderPage"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:purchaseOrder="clr-namespace:D365.Presentation.Device.PageModels.SalesOrder"
+    xmlns:pm="clr-namespace:D365.Presentation.Device.PageModels.SalesOrder"
     xmlns:records="clr-namespace:D365.Presentation.Device.Core.Records;assembly=D365.Presentation.Device.Core"
     Title="Sales Orders"
-    x:DataType="purchaseOrder:SalesOrderPageModel">
+    x:DataType="pm:SalesOrderPageModel">
 
 
     <Grid>
+        <Grid Padding="12" RowDefinitions="Auto, *">
 
-        <RefreshView Command="{Binding RefreshCommand}" IsRefreshing="{Binding IsRefreshing}">
+            <!--<SearchBar
+                Placeholder="Search orders..."
+                SearchCommand="{Binding ApplyFilterCommand}"
+                SearchCommandParameter="{Binding Text, Source={RelativeSource Self}}"
+                Text="{Binding SearchText}" />-->
 
-            <CollectionView ItemsSource="{Binding Orders}">
+            <Button Command="{Binding OpenPageCommand}" Text="Click Me" />
+
+            <CollectionView
+                Grid.Row="1"
+                ItemSizingStrategy="MeasureFirstItem"
+                ItemsSource="{Binding Orders}"
+                RemainingItemsThreshold="5"
+                RemainingItemsThresholdReachedCommand="{Binding LoadNextPageCommand}"
+                SelectionMode="None">
 
                 <CollectionView.ItemTemplate>
                     <DataTemplate x:DataType="records:D365SalesOrderHeaderRecord">
 
-                        <SwipeView>
-                            <SwipeView.LeftItems>
-                                <SwipeItems>
-                                    <SwipeItem
-                                        BackgroundColor="LightBlue"
-                                        Command="{Binding Source={RelativeSource AncestorType={x:Type purchaseOrder:SalesOrderPageModel}}, Path=OpenDetailsCommand}"
-                                        CommandParameter="{Binding .}"
-                                        Text="Details" />
-                                </SwipeItems>
-                            </SwipeView.LeftItems>
+                        <Grid>
+                            <Grid.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding Source={RelativeSource AncestorType={x:Type pm:SalesOrderPageModel}}, Path=OpenDetailsCommand}" CommandParameter="{Binding .}" />
+                            </Grid.GestureRecognizers>
 
                             <Border
-                                Margin="5"
-                                Padding="10"
-                                StrokeShape="RoundRectangle 5">
-                                <VerticalStackLayout>
-                                    <Label FontAttributes="Bold" Text="{Binding SalesOrderNumber, StringFormat='Order Number: {0}'}" />
-                                    <Label Text="{Binding OrderingCustomerAccountNumber, StringFormat='Customer Account: {0}'}" />
-                                    <Label Text="{Binding SalesOrderName, StringFormat='Customer Name: {0}'}" />
-                                    <Label Text="{Binding InvoiceCustomerAccountNumber, StringFormat='Invoice Account: {0}'}" />
-                                    <Label Text="{Binding RequestedReceiptDate, StringFormat='Request Receipt Date: {0:d}'}" />
-                                    <Label Text="{Binding SalesOrderProcessingStatus, StringFormat='Approval Status: {0}'}" />
-                                </VerticalStackLayout>
+                                Margin="6"
+                                Padding="12"
+                                BackgroundColor="{StaticResource White}"
+                                StrokeShape="RoundRectangle 5,5,5,5">
+                                <Grid ColumnDefinitions="*, Auto">
+                                    <VerticalStackLayout>
+                                        <Label
+                                            FontAttributes="Bold"
+                                            FontSize="17"
+                                            Text="{Binding SalesOrderNumber}" />
+                                        <Label FontSize="14" Text="{Binding SalesOrderName}" />
+
+                                        <Label Text="{Binding OrderTotalAmount, StringFormat='Total: {0:F2}'}" TextColor="Green" />
+                                    </VerticalStackLayout>
+
+                                    <Label
+                                        Grid.Column="1"
+                                        FontSize="12"
+                                        Text="{Binding RequestedReceiptDate, StringFormat='{0:dd MMM}'}"
+                                        VerticalOptions="Start" />
+                                </Grid>
+
                             </Border>
-                        </SwipeView>
+                        </Grid>
+
+
 
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
 
             </CollectionView>
 
-        </RefreshView>
+
+        </Grid>
+
+
 
         <!--#region BoxView-->
         <Grid Opacity="0.5">

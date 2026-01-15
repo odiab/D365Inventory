@@ -3,48 +3,28 @@
   "WorkspaceRootPath": "D:\\DevOpts\\2026\\D365InventoryAppSolution\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2ADCF3D6-7E9B-D0A3-F92C-7966E5028480}|D365.Presentation.Device.Plugins.DataStore.WebApi\\D365.Presentation.Device.Plugins.DataStore.WebApi.csproj|d:\\devopts\\2026\\d365inventoryappsolution\\d365.presentation.device.plugins.datastore.webapi\\d365apirepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2ADCF3D6-7E9B-D0A3-F92C-7966E5028480}|D365.Presentation.Device.Plugins.DataStore.WebApi\\D365.Presentation.Device.Plugins.DataStore.WebApi.csproj|solutionrelative:d365.presentation.device.plugins.datastore.webapi\\d365apirepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{264D250B-480D-6FF8-428A-DEE7F137EB06}|D365.Presentation.Device.Core\\D365.Presentation.Device.Core.csproj|d:\\devopts\\2026\\d365inventoryappsolution\\d365.presentation.device.core\\records\\d365salesorderheaderrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{264D250B-480D-6FF8-428A-DEE7F137EB06}|D365.Presentation.Device.Core\\D365.Presentation.Device.Core.csproj|solutionrelative:d365.presentation.device.core\\records\\d365salesorderheaderrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{48397C3A-2B6B-CE01-C6CF-FED9308AF1B6}|D365.Presentation.Device\\D365.Presentation.Device.csproj|d:\\devopts\\2026\\d365inventoryappsolution\\d365.presentation.device\\pages\\salesorder\\salesorderdetailpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{48397C3A-2B6B-CE01-C6CF-FED9308AF1B6}|D365.Presentation.Device\\D365.Presentation.Device.csproj|solutionrelative:d365.presentation.device\\pages\\salesorder\\salesorderdetailpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{264D250B-480D-6FF8-428A-DEE7F137EB06}|D365.Presentation.Device.Core\\D365.Presentation.Device.Core.csproj|d:\\devopts\\2026\\d365inventoryappsolution\\d365.presentation.device.core\\records\\d365salesorderlinerecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{264D250B-480D-6FF8-428A-DEE7F137EB06}|D365.Presentation.Device.Core\\D365.Presentation.Device.Core.csproj|solutionrelative:d365.presentation.device.core\\records\\d365salesorderlinerecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{48397C3A-2B6B-CE01-C6CF-FED9308AF1B6}|D365.Presentation.Device\\D365.Presentation.Device.csproj|d:\\devopts\\2026\\d365inventoryappsolution\\d365.presentation.device\\pages\\salesorder\\salesorderpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{48397C3A-2B6B-CE01-C6CF-FED9308AF1B6}|D365.Presentation.Device\\D365.Presentation.Device.csproj|solutionrelative:d365.presentation.device\\pages\\salesorder\\salesorderpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{01D35CD7-D33F-8130-80A2-88BAFD758130}|D365.Presentation.Device.UseCase\\D365.Presentation.Device.UseCase.csproj|d:\\devopts\\2026\\d365inventoryappsolution\\d365.presentation.device.usecase\\viewconfirmedsalesordersusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{01D35CD7-D33F-8130-80A2-88BAFD758130}|D365.Presentation.Device.UseCase\\D365.Presentation.Device.UseCase.csproj|solutionrelative:d365.presentation.device.usecase\\viewconfirmedsalesordersusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{01D35CD7-D33F-8130-80A2-88BAFD758130}|D365.Presentation.Device.UseCase\\D365.Presentation.Device.UseCase.csproj|d:\\devopts\\2026\\d365inventoryappsolution\\d365.presentation.device.usecase\\interfaces\\iviewconfirmedsalesordersusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{01D35CD7-D33F-8130-80A2-88BAFD758130}|D365.Presentation.Device.UseCase\\D365.Presentation.Device.UseCase.csproj|solutionrelative:d365.presentation.device.usecase\\interfaces\\iviewconfirmedsalesordersusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{48397C3A-2B6B-CE01-C6CF-FED9308AF1B6}|D365.Presentation.Device\\D365.Presentation.Device.csproj|d:\\devopts\\2026\\d365inventoryappsolution\\d365.presentation.device\\pagemodels\\salesorder\\newpage1.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48397C3A-2B6B-CE01-C6CF-FED9308AF1B6}|D365.Presentation.Device\\D365.Presentation.Device.csproj|solutionrelative:d365.presentation.device\\pagemodels\\salesorder\\newpage1.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{48397C3A-2B6B-CE01-C6CF-FED9308AF1B6}|D365.Presentation.Device\\D365.Presentation.Device.csproj|d:\\devopts\\2026\\d365inventoryappsolution\\d365.presentation.device\\pagemodels\\salesorder\\salesorderpagemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{48397C3A-2B6B-CE01-C6CF-FED9308AF1B6}|D365.Presentation.Device\\D365.Presentation.Device.csproj|solutionrelative:d365.presentation.device\\pagemodels\\salesorder\\salesorderpagemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{051520CB-F29A-723A-CD1F-128F21E1480C}|D365.Presentation.Device.Plugins.DataStore.SQLite\\D365.Presentation.Device.Plugins.DataStore.SQLite.csproj|d:\\devopts\\2026\\d365inventoryappsolution\\d365.presentation.device.plugins.datastore.sqlite\\transferordersqliterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{051520CB-F29A-723A-CD1F-128F21E1480C}|D365.Presentation.Device.Plugins.DataStore.SQLite\\D365.Presentation.Device.Plugins.DataStore.SQLite.csproj|solutionrelative:d365.presentation.device.plugins.datastore.sqlite\\transferordersqliterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{48397C3A-2B6B-CE01-C6CF-FED9308AF1B6}|D365.Presentation.Device\\D365.Presentation.Device.csproj|d:\\devopts\\2026\\d365inventoryappsolution\\d365.presentation.device\\services\\inavigationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48397C3A-2B6B-CE01-C6CF-FED9308AF1B6}|D365.Presentation.Device\\D365.Presentation.Device.csproj|solutionrelative:d365.presentation.device\\services\\inavigationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{01D35CD7-D33F-8130-80A2-88BAFD758130}|D365.Presentation.Device.UseCase\\D365.Presentation.Device.UseCase.csproj|d:\\devopts\\2026\\d365inventoryappsolution\\d365.presentation.device.usecase\\viewordersusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{01D35CD7-D33F-8130-80A2-88BAFD758130}|D365.Presentation.Device.UseCase\\D365.Presentation.Device.UseCase.csproj|solutionrelative:d365.presentation.device.usecase\\viewordersusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{48397C3A-2B6B-CE01-C6CF-FED9308AF1B6}|D365.Presentation.Device\\D365.Presentation.Device.csproj|d:\\devopts\\2026\\d365inventoryappsolution\\d365.presentation.device\\app_start\\addscopedconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48397C3A-2B6B-CE01-C6CF-FED9308AF1B6}|D365.Presentation.Device\\D365.Presentation.Device.csproj|solutionrelative:d365.presentation.device\\app_start\\addscopedconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{48397C3A-2B6B-CE01-C6CF-FED9308AF1B6}|D365.Presentation.Device\\D365.Presentation.Device.csproj|d:\\devopts\\2026\\d365inventoryappsolution\\d365.presentation.device\\pagemodels\\transferorder\\transferorderspagemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{48397C3A-2B6B-CE01-C6CF-FED9308AF1B6}|D365.Presentation.Device\\D365.Presentation.Device.csproj|solutionrelative:d365.presentation.device\\pagemodels\\transferorder\\transferorderspagemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{48397C3A-2B6B-CE01-C6CF-FED9308AF1B6}|D365.Presentation.Device\\D365.Presentation.Device.csproj|d:\\devopts\\2026\\d365inventoryappsolution\\d365.presentation.device\\app_start\\addsingletonconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48397C3A-2B6B-CE01-C6CF-FED9308AF1B6}|D365.Presentation.Device\\D365.Presentation.Device.csproj|solutionrelative:d365.presentation.device\\app_start\\addsingletonconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48397C3A-2B6B-CE01-C6CF-FED9308AF1B6}|D365.Presentation.Device\\D365.Presentation.Device.csproj|d:\\devopts\\2026\\d365inventoryappsolution\\d365.presentation.device\\pagemodels\\mainpagemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48397C3A-2B6B-CE01-C6CF-FED9308AF1B6}|D365.Presentation.Device\\D365.Presentation.Device.csproj|solutionrelative:d365.presentation.device\\pagemodels\\mainpagemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 14,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
@@ -98,139 +78,81 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "NewPage1.xaml.cs",
+              "DocumentMoniker": "D:\\DevOpts\\2026\\D365InventoryAppSolution\\D365.Presentation.Device\\PageModels\\SalesOrder\\NewPage1.xaml.cs",
+              "RelativeDocumentMoniker": "D365.Presentation.Device\\PageModels\\SalesOrder\\NewPage1.xaml.cs",
+              "ToolTip": "D:\\DevOpts\\2026\\D365InventoryAppSolution\\D365.Presentation.Device\\PageModels\\SalesOrder\\NewPage1.xaml.cs",
+              "RelativeToolTip": "D365.Presentation.Device\\PageModels\\SalesOrder\\NewPage1.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-15T14:19:29.328Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "SalesOrderDetailPage.xaml",
-              "DocumentMoniker": "D:\\DevOpts\\2026\\D365InventoryAppSolution\\D365.Presentation.Device\\Pages\\SalesOrder\\SalesOrderDetailPage.xaml",
-              "RelativeDocumentMoniker": "D365.Presentation.Device\\Pages\\SalesOrder\\SalesOrderDetailPage.xaml",
-              "ToolTip": "D:\\DevOpts\\2026\\D365InventoryAppSolution\\D365.Presentation.Device\\Pages\\SalesOrder\\SalesOrderDetailPage.xaml",
-              "RelativeToolTip": "D365.Presentation.Device\\Pages\\SalesOrder\\SalesOrderDetailPage.xaml",
-              "ViewState": "AgIAADEAAAAAAAAAAAAAAEEAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-01-13T13:41:41.85Z",
+              "Title": "INavigationService.cs",
+              "DocumentMoniker": "D:\\DevOpts\\2026\\D365InventoryAppSolution\\D365.Presentation.Device\\Services\\INavigationService.cs",
+              "RelativeDocumentMoniker": "D365.Presentation.Device\\Services\\INavigationService.cs",
+              "ToolTip": "D:\\DevOpts\\2026\\D365InventoryAppSolution\\D365.Presentation.Device\\Services\\INavigationService.cs",
+              "RelativeToolTip": "D365.Presentation.Device\\Services\\INavigationService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-15T14:07:53.587Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AddScopedConfig.cs",
+              "DocumentMoniker": "D:\\DevOpts\\2026\\D365InventoryAppSolution\\D365.Presentation.Device\\App_Start\\AddScopedConfig.cs",
+              "RelativeDocumentMoniker": "D365.Presentation.Device\\App_Start\\AddScopedConfig.cs",
+              "ToolTip": "D:\\DevOpts\\2026\\D365InventoryAppSolution\\D365.Presentation.Device\\App_Start\\AddScopedConfig.cs",
+              "RelativeToolTip": "D365.Presentation.Device\\App_Start\\AddScopedConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-15T14:07:09.576Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "SalesOrderPage.xaml",
-              "DocumentMoniker": "D:\\DevOpts\\2026\\D365InventoryAppSolution\\D365.Presentation.Device\\Pages\\SalesOrder\\SalesOrderPage.xaml",
-              "RelativeDocumentMoniker": "D365.Presentation.Device\\Pages\\SalesOrder\\SalesOrderPage.xaml",
-              "ToolTip": "D:\\DevOpts\\2026\\D365InventoryAppSolution\\D365.Presentation.Device\\Pages\\SalesOrder\\SalesOrderPage.xaml",
-              "RelativeToolTip": "D365.Presentation.Device\\Pages\\SalesOrder\\SalesOrderPage.xaml",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAACUAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-01-12T17:28:54.561Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "D365SalesOrderLineRecord.cs",
-              "DocumentMoniker": "D:\\DevOpts\\2026\\D365InventoryAppSolution\\D365.Presentation.Device.Core\\Records\\D365SalesOrderLineRecord.cs",
-              "RelativeDocumentMoniker": "D365.Presentation.Device.Core\\Records\\D365SalesOrderLineRecord.cs",
-              "ToolTip": "D:\\DevOpts\\2026\\D365InventoryAppSolution\\D365.Presentation.Device.Core\\Records\\D365SalesOrderLineRecord.cs",
-              "RelativeToolTip": "D365.Presentation.Device.Core\\Records\\D365SalesOrderLineRecord.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAABAAAAAAAAAAA==",
+              "Title": "AddSingletonConfig.cs",
+              "DocumentMoniker": "D:\\DevOpts\\2026\\D365InventoryAppSolution\\D365.Presentation.Device\\App_Start\\AddSingletonConfig.cs",
+              "RelativeDocumentMoniker": "D365.Presentation.Device\\App_Start\\AddSingletonConfig.cs",
+              "ToolTip": "D:\\DevOpts\\2026\\D365InventoryAppSolution\\D365.Presentation.Device\\App_Start\\AddSingletonConfig.cs",
+              "RelativeToolTip": "D365.Presentation.Device\\App_Start\\AddSingletonConfig.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAAAqwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-12T17:25:55.826Z",
+              "WhenOpened": "2026-01-15T14:06:55.48Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "D365SalesOrderHeaderRecord.cs",
-              "DocumentMoniker": "D:\\DevOpts\\2026\\D365InventoryAppSolution\\D365.Presentation.Device.Core\\Records\\D365SalesOrderHeaderRecord.cs",
-              "RelativeDocumentMoniker": "D365.Presentation.Device.Core\\Records\\D365SalesOrderHeaderRecord.cs",
-              "ToolTip": "D:\\DevOpts\\2026\\D365InventoryAppSolution\\D365.Presentation.Device.Core\\Records\\D365SalesOrderHeaderRecord.cs",
-              "RelativeToolTip": "D365.Presentation.Device.Core\\Records\\D365SalesOrderHeaderRecord.cs",
-              "ViewState": "AgIAAKgAAAAAAAAAAAAAAK4AAABAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-12T17:25:48.341Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "D365ApiRepository.cs",
-              "DocumentMoniker": "D:\\DevOpts\\2026\\D365InventoryAppSolution\\D365.Presentation.Device.Plugins.DataStore.WebApi\\D365ApiRepository.cs",
-              "RelativeDocumentMoniker": "D365.Presentation.Device.Plugins.DataStore.WebApi\\D365ApiRepository.cs",
-              "ToolTip": "D:\\DevOpts\\2026\\D365InventoryAppSolution\\D365.Presentation.Device.Plugins.DataStore.WebApi\\D365ApiRepository.cs",
-              "RelativeToolTip": "D365.Presentation.Device.Plugins.DataStore.WebApi\\D365ApiRepository.cs",
-              "ViewState": "AgIAABMBAAAAAAAAAAAhwEgBAABUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-12T17:22:03.117Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ViewConfirmedSalesOrdersUseCase.cs",
-              "DocumentMoniker": "D:\\DevOpts\\2026\\D365InventoryAppSolution\\D365.Presentation.Device.UseCase\\ViewConfirmedSalesOrdersUseCase.cs",
-              "RelativeDocumentMoniker": "D365.Presentation.Device.UseCase\\ViewConfirmedSalesOrdersUseCase.cs",
-              "ToolTip": "D:\\DevOpts\\2026\\D365InventoryAppSolution\\D365.Presentation.Device.UseCase\\ViewConfirmedSalesOrdersUseCase.cs",
-              "RelativeToolTip": "D365.Presentation.Device.UseCase\\ViewConfirmedSalesOrdersUseCase.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-12T17:21:56.116Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "IViewConfirmedSalesOrdersUseCase.cs",
-              "DocumentMoniker": "D:\\DevOpts\\2026\\D365InventoryAppSolution\\D365.Presentation.Device.UseCase\\Interfaces\\IViewConfirmedSalesOrdersUseCase.cs",
-              "RelativeDocumentMoniker": "D365.Presentation.Device.UseCase\\Interfaces\\IViewConfirmedSalesOrdersUseCase.cs",
-              "ToolTip": "D:\\DevOpts\\2026\\D365InventoryAppSolution\\D365.Presentation.Device.UseCase\\Interfaces\\IViewConfirmedSalesOrdersUseCase.cs",
-              "RelativeToolTip": "D365.Presentation.Device.UseCase\\Interfaces\\IViewConfirmedSalesOrdersUseCase.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-12T17:21:52.477Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
               "Title": "SalesOrderPageModel.cs",
               "DocumentMoniker": "D:\\DevOpts\\2026\\D365InventoryAppSolution\\D365.Presentation.Device\\PageModels\\SalesOrder\\SalesOrderPageModel.cs",
               "RelativeDocumentMoniker": "D365.Presentation.Device\\PageModels\\SalesOrder\\SalesOrderPageModel.cs",
               "ToolTip": "D:\\DevOpts\\2026\\D365InventoryAppSolution\\D365.Presentation.Device\\PageModels\\SalesOrder\\SalesOrderPageModel.cs",
               "RelativeToolTip": "D365.Presentation.Device\\PageModels\\SalesOrder\\SalesOrderPageModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFAAAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAAE0AAAAAAAAAAAAAwGEAAABVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-12T17:21:44.227Z"
+              "WhenOpened": "2026-01-15T14:05:26.158Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "TransferOrderSQLiteRepository.cs",
-              "DocumentMoniker": "D:\\DevOpts\\2026\\D365InventoryAppSolution\\D365.Presentation.Device.Plugins.DataStore.SQLite\\TransferOrderSQLiteRepository.cs",
-              "RelativeDocumentMoniker": "D365.Presentation.Device.Plugins.DataStore.SQLite\\TransferOrderSQLiteRepository.cs",
-              "ToolTip": "D:\\DevOpts\\2026\\D365InventoryAppSolution\\D365.Presentation.Device.Plugins.DataStore.SQLite\\TransferOrderSQLiteRepository.cs",
-              "RelativeToolTip": "D365.Presentation.Device.Plugins.DataStore.SQLite\\TransferOrderSQLiteRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAzAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "MainPageModel.cs",
+              "DocumentMoniker": "D:\\DevOpts\\2026\\D365InventoryAppSolution\\D365.Presentation.Device\\PageModels\\MainPageModel.cs",
+              "RelativeDocumentMoniker": "D365.Presentation.Device\\PageModels\\MainPageModel.cs",
+              "ToolTip": "D:\\DevOpts\\2026\\D365InventoryAppSolution\\D365.Presentation.Device\\PageModels\\MainPageModel.cs",
+              "RelativeToolTip": "D365.Presentation.Device\\PageModels\\MainPageModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-12T17:19:00.49Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ViewOrdersUseCase.cs",
-              "DocumentMoniker": "D:\\DevOpts\\2026\\D365InventoryAppSolution\\D365.Presentation.Device.UseCase\\ViewOrdersUseCase.cs",
-              "RelativeDocumentMoniker": "D365.Presentation.Device.UseCase\\ViewOrdersUseCase.cs",
-              "ToolTip": "D:\\DevOpts\\2026\\D365InventoryAppSolution\\D365.Presentation.Device.UseCase\\ViewOrdersUseCase.cs",
-              "RelativeToolTip": "D365.Presentation.Device.UseCase\\ViewOrdersUseCase.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-12T17:18:57.444Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "TransferOrdersPageModel.cs",
-              "DocumentMoniker": "D:\\DevOpts\\2026\\D365InventoryAppSolution\\D365.Presentation.Device\\PageModels\\TransferOrder\\TransferOrdersPageModel.cs",
-              "RelativeDocumentMoniker": "D365.Presentation.Device\\PageModels\\TransferOrder\\TransferOrdersPageModel.cs",
-              "ToolTip": "D:\\DevOpts\\2026\\D365InventoryAppSolution\\D365.Presentation.Device\\PageModels\\TransferOrder\\TransferOrdersPageModel.cs",
-              "RelativeToolTip": "D365.Presentation.Device\\PageModels\\TransferOrder\\TransferOrdersPageModel.cs",
-              "ViewState": "AgIAAFcAAAAAAAAAAAAAAGwAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-12T17:18:29.548Z"
+              "WhenOpened": "2026-01-15T14:04:39.736Z",
+              "EditorCaption": ""
             }
           ]
         }

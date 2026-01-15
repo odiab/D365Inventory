@@ -17,8 +17,11 @@ public interface ID365Repository
     Task<ResultRecord<D365TransferOrderHeaderResponseRecord>> GetTransferOrderAsync(string baseUrl, string? dataAreaId, string? transferOrderNumber);
     Task<ResultsRecord<D365PurchaseOrderHeaderRecord>> GetConfirmedPurchaseOrderAsync(string baseUrl, bool isOnline = false);
     Task<ResultRecord<D365PurchaseOrderHeaderRecord>> GetPurchaseOrderAsync(string baseUrl, string? dataAreaId, string? purchaseOrderNumber);
-    Task<ResultsRecord<D365SalesOrderHeaderRecord>> GetConfirmedSalesOrderAsync(string baseUrl, bool isOnline = false);
-    Task<ResultRecord<D365SalesOrderHeaderRecord>> GetSalesOrderAsync(string baseUrl, string? dataAreaId, string? salesOrderNumber);
+    Task<(bool success, string? errorMessage, D365SalesOrderHeaderRecord[]? items, int page, int pageSize, int totalCount)>
+        GetSalesOrderAsync(string baseUrl,
+            string? query, int page = 0, int pageSize = 15, bool isOnline = false);
+    Task<ResultsRecord<D365SalesOrderLineRecord>> GetSalesOrderLinesAsync(string baseUrl, string? dataAreaId,
+        string? salesOrderNumber);
 
     #endregion
 

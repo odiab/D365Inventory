@@ -33,7 +33,7 @@ internal static partial class HostingExtensions
             .AddSingleton<IViewShippedOrdersUseCase, ViewShippedOrdersUseCase>()
             .AddSingleton<IViewTransferOrderUseCase, ViewTransferOrderUseCase>()
             .AddSingleton<IViewConfirmedPurchaseOrdersUseCase, ViewConfirmedPurchaseOrdersUseCase>()
-            .AddSingleton<IViewConfirmedSalesOrdersUseCase, ViewConfirmedSalesOrdersUseCase>()
+            .AddSingleton<IViewSalesOrdersUseCase, ViewSalesOrdersUseCase>()
             .AddSingleton<IViewPurchaseOrderUseCase, ViewPurchaseOrderUseCase>()
             .AddSingleton<IViewSalesOrderUseCase, ViewSalesOrderUseCase>()
 

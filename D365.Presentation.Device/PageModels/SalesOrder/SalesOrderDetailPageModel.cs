@@ -63,8 +63,8 @@ public partial class SalesOrderDetailPageModel : AbstractPageModel, IRecipient<O
                 return;
             }
 
-            Order = result;
-            Lines = result.Lines ?? [];
+            //Order = result;
+            Lines = result ?? [];
         }
         finally
         {

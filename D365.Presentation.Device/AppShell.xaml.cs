@@ -13,8 +13,8 @@ public partial class AppShell
     {
         InitializeComponent();
 
-        _sessionService = sessionService;
-        _sessionService.OnTimeout += OnSessionTimeout;
+
+        Routing.RegisterRoute(nameof(NewPage1), typeof(NewPage1));
 
         Routing.RegisterRoute(nameof(LoginPage), typeof(LoginPage));
         Routing.RegisterRoute(nameof(ConfigurationPage), typeof(ConfigurationPage));
@@ -32,9 +32,12 @@ public partial class AppShell
         Routing.RegisterRoute(nameof(ShippedTransferOrderPage), typeof(ShippedTransferOrderPage));
         Routing.RegisterRoute(nameof(TransferOrderDetailPage), typeof(TransferOrderDetailPage));
         Routing.RegisterRoute(nameof(PurchaseOrderPage), typeof(PurchaseOrderPage));
-        Routing.RegisterRoute(nameof(SalesOrderPage), typeof(SalesOrderPage));
         Routing.RegisterRoute(nameof(PurchaseOrderDetailPage), typeof(PurchaseOrderDetailPage));
+        Routing.RegisterRoute(nameof(SalesOrderPage), typeof(SalesOrderPage));
         Routing.RegisterRoute(nameof(SalesOrderDetailPage), typeof(SalesOrderDetailPage));
+
+        _sessionService = sessionService;
+        _sessionService.OnTimeout += OnSessionTimeout;
     }
 
     #endregion

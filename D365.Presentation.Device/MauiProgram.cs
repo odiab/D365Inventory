@@ -21,6 +21,7 @@ public static class MauiProgram
             .AddDbContextConfig()
             .AddTransientConfig()
             .AddSingletonConfig()
+            .AddScopedConfig()
             .AddHttpClientConfig();
 
         return builder.Build();

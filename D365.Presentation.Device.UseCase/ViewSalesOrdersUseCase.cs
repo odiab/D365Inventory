@@ -1,9 +1,12 @@
 ﻿namespace D365.Presentation.Device.UseCase;
 
-public class ViewConfirmedSalesOrdersUseCase(ID365Repository repository) : IViewConfirmedSalesOrdersUseCase
+public class ViewSalesOrdersUseCase(ID365Repository repository) : IViewSalesOrdersUseCase
 {
-    public async Task<D365SalesOrderHeaderRecord[]?> ExecuteAsync(string baseUrl, bool isOnline = false, string[]? warehouses = null) =>
-        FilterAsync(await repository.GetConfirmedSalesOrderAsync(baseUrl, isOnline), warehouses);
+    public async
+        Task<(bool success, string? errorMessage, D365SalesOrderHeaderRecord[]? items, int page, int pageSize, int
+            totalCount)> ExecuteAsync(string baseUrl, string? query, int page = 1, int pageSize = 15,
+            bool isOnline = false) =>
+        await repository.GetSalesOrderAsync(baseUrl, query, page, pageSize, isOnline);
 
 
     public D365SalesOrderHeaderRecord[]? FilterAsync(ResultsRecord<D365SalesOrderHeaderRecord> records, string[]? filters)

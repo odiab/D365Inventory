@@ -1,6 +1,7 @@
 ﻿namespace D365.Presentation.Device.PageModels;
 
 public partial class MainPageModel(
+    INavigationService navigationService,
     ConnectivityService connectivityService,
     SessionService sessionService,
     IPostTransferOrderUseCase postTransferOrderUseCase)
@@ -16,85 +17,85 @@ public partial class MainPageModel(
         Preferences.Default.Remove("Warehouses");
         Preferences.Default.Remove("IsLoggedIn");
 
-        await Shell.Current.GoToAsync($"{nameof(LoginPage)}");
+        await navigationService.GoToAsync($"{nameof(LoginPage)}");
     }
 
     [RelayCommand]
     private async Task OpenProductsAsync()
     {
-        await Shell.Current.GoToAsync($"{nameof(ProductPage)}");
+        await navigationService.GoToAsync($"{nameof(ProductPage)}");
     }
 
     [RelayCommand]
     private async Task OpenProductColorsAsync()
     {
-        await Shell.Current.GoToAsync($"{nameof(ProductColorPage)}");
+        await navigationService.GoToAsync($"{nameof(ProductColorPage)}");
     }
 
     [RelayCommand]
     private async Task OpenProductSizesAsync()
     {
-        await Shell.Current.GoToAsync($"{nameof(ProductSizePage)}");
+        await navigationService.GoToAsync($"{nameof(ProductSizePage)}");
     }
 
     [RelayCommand]
     private async Task OpenProductStylesAsync()
     {
-        await Shell.Current.GoToAsync($"{nameof(ProductStylePage)}");
+        await navigationService.GoToAsync($"{nameof(ProductStylePage)}");
     }
 
     [RelayCommand]
     private async Task OpenProductConfigurationsAsync()
     {
-        await Shell.Current.GoToAsync($"{nameof(ProductConfigurationPage)}");
+        await navigationService.GoToAsync($"{nameof(ProductConfigurationPage)}");
     }
 
     [RelayCommand]
     private async Task OpenWarehousePageAsync()
     {
-        await Shell.Current.GoToAsync($"{nameof(WarehousePage)}");
+        await navigationService.GoToAsync($"{nameof(WarehousePage)}");
     }
 
     [RelayCommand]
     private async Task OpenSitePageAsync()
     {
-        await Shell.Current.GoToAsync($"{nameof(SitePage)}");
+        await navigationService.GoToAsync($"{nameof(SitePage)}");
     }
 
     [RelayCommand]
     private async Task OpenOnHandPageAsync()
     {
-        await Shell.Current.GoToAsync($"{nameof(OnHandPage)}");
+        await navigationService.GoToAsync($"{nameof(OnHandPage)}");
     }
 
     [RelayCommand]
     private async Task OpenAddTransferOrderPageAsync()
     {
-        await Shell.Current.GoToAsync($"{nameof(AddTransferOrderPage)}");
+        await navigationService.GoToAsync($"{nameof(AddTransferOrderPage)}");
     }
 
     [RelayCommand]
     private async Task OpenTransferOrderPageAsync()
     {
-        await Shell.Current.GoToAsync($"{nameof(TransferOrdersPage)}");
+        await navigationService.GoToAsync($"{nameof(TransferOrdersPage)}");
     }
 
     [RelayCommand]
     private async Task OpenShippedTransferOrderPageAsync()
     {
-        await Shell.Current.GoToAsync($"{nameof(ShippedTransferOrderPage)}");
+        await navigationService.GoToAsync($"{nameof(ShippedTransferOrderPage)}");
     }
 
     [RelayCommand]
     private async Task OpenPurchaseOrderPageAsync()
     {
-        await Shell.Current.GoToAsync($"{nameof(PurchaseOrderPage)}");
+        await navigationService.GoToAsync($"{nameof(PurchaseOrderPage)}");
     }
 
     [RelayCommand]
     private async Task OpenSalesOrderPageAsync()
     {
-        await Shell.Current.GoToAsync($"{nameof(SalesOrderPage)}");
+        await navigationService.GoToAsync($"{nameof(SalesOrderPage)}");
     }
 
     [RelayCommand]

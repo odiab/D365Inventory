@@ -7,6 +7,7 @@ D:\DevOpts\2026\D365InventoryAppSolution\D365.Presentation.Device.Core\obj\Debug
 D:\DevOpts\2026\D365InventoryAppSolution\D365.Presentation.Device.Core\obj\Debug\net10.0-maccatalyst\D365.Presentation.Device.Core.AssemblyInfoInputs.cache
 D:\DevOpts\2026\D365InventoryAppSolution\D365.Presentation.Device.Core\obj\Debug\net10.0-maccatalyst\D365.Presentation.Device.Core.AssemblyInfo.cs
 D:\DevOpts\2026\D365InventoryAppSolution\D365.Presentation.Device.Core\obj\Debug\net10.0-maccatalyst\D365.Presentation.Device.Core.csproj.CoreCompileInputs.cache
+D:\DevOpts\2026\D365InventoryAppSolution\D365.Presentation.Device.Core\obj\Debug\net10.0-maccatalyst\D365.Presentation.Device.Core.sourcelink.json
 D:\DevOpts\2026\D365InventoryAppSolution\D365.Presentation.Device.Core\obj\Debug\net10.0-maccatalyst\D365.Presentation.Device.Core.dll
 D:\DevOpts\2026\D365InventoryAppSolution\D365.Presentation.Device.Core\obj\Debug\net10.0-maccatalyst\refint\D365.Presentation.Device.Core.dll
 D:\DevOpts\2026\D365InventoryAppSolution\D365.Presentation.Device.Core\obj\Debug\net10.0-maccatalyst\D365.Presentation.Device.Core.pdb

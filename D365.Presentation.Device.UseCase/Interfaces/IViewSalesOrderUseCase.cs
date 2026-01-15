@@ -2,5 +2,5 @@
 
 public interface IViewSalesOrderUseCase
 {
-    Task<D365SalesOrderHeaderRecord?> ExecuteAsync(string baseUrl, string? dataAreaId, string? salesOrderNumber);
+    Task<D365SalesOrderLineRecord[]?> ExecuteAsync(string baseUrl, string? dataAreaId, string? salesOrderNumber);
 }

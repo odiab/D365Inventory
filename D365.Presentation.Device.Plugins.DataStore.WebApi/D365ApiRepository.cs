@@ -1,4 +1,6 @@
-﻿namespace D365.Presentation.Device.Plugins.DataStore.WebApi;
+﻿using System.Web;
+
+namespace D365.Presentation.Device.Plugins.DataStore.WebApi;
 
 public class D365ApiRepository(HttpClient client, IMemoryCache cache) : ID365Repository
 {
@@ -316,45 +318,73 @@ public class D365ApiRepository(HttpClient client, IMemoryCache cache) : ID365Rep
         }
     }
 
-    public async Task<ResultsRecord<D365SalesOrderHeaderRecord>> GetConfirmedSalesOrderAsync(string baseUrl, bool isOnline = false)
+    public async
+        Task<(bool success, string? errorMessage, D365SalesOrderHeaderRecord[]? items, int page, int pageSize, int
+            totalCount)> GetSalesOrderAsync(string baseUrl, string? query, int page = 0, int pageSize = 15,
+            bool isOnline = false)
     {
-        var cacheKey = "D365SalesOrderKey";
-        if (cache.TryGetValue(cacheKey, out D365SalesOrderHeaderRecord[]? value) && value is not null && isOnline)
-        {
-            return new ResultsRecord<D365SalesOrderHeaderRecord>(Data: value);
-        }
+        //var cacheKey = "D365SalesOrderKey";
+        //if (!isOnline)
+        //{
+        //    if (cache.TryGetValue(cacheKey, out value) && value is not null && isOnline)
+        //    {
+        //        return new ResultsRecord<D365SalesOrderHeaderRecord>(Data: value);
+        //    }
+        //}
 
         try
         {
-            var uri = new Uri(new Uri(baseUrl), $"/data/SalesOrderHeadersV3?$filter=SalesOrderStatus eq Microsoft.Dynamics.DataEntities.SalesStatus'Backorder'&$expand=SalesOrderLines");
-            var result = await LoadAsync<D365SalesOrderHeaderRecord>(uri);
+            var queryParameters = HttpUtility.ParseQueryString(string.Empty);
 
-            value = result.Data?.OrderBy(o => o.ConfirmedReceiptDate).ToArray();
-            cache.Set(cacheKey, value, new MemoryCacheEntryOptions()
-                .SetSlidingExpiration(TimeSpan.FromHours(12)));
 
-            return new ResultsRecord<D365SalesOrderHeaderRecord>(Data: value);
+            queryParameters.Add("$filter", $"SalesOrderStatus eq Microsoft.Dynamics.DataEntities.SalesStatus'Backorder'{(!string.IsNullOrWhiteSpace(query) ? $" and SalesOrderNumber eq '{query}'" : string.Empty)}");
+            queryParameters.Add("$orderby", "OrderCreationDateTime desc");
+            queryParameters.Add("$count", "true");
+            queryParameters.Add("$top", pageSize.ToString());
+            queryParameters.Add("$skip", page.ToString());
+            //queryParameters.Add("$expand", "SalesOrderLines");
+
+
+            var uri = new Uri(new Uri(baseUrl), $"/data/SalesOrderHeadersV3?{queryParameters}");
+            var result = await client.GetFromJsonAsync<D365RootRecord<D365SalesOrderHeaderRecord>>(uri, BusinessExtensions.JsonSerializerOptions);
+            if (result is null)
+            {
+                return (false, "Can not access D365 FO server.", null, page, pageSize, 0);
+            }
+
+            var items = result.Value.OrderBy(o => o.RequestedReceiptDate).ToArray();
+            //cache.Set(cacheKey, value, new MemoryCacheEntryOptions()
+            //    .SetSlidingExpiration(TimeSpan.FromHours(12)));
+
+            return (true, null, items, page, pageSize, result.OdataCount ?? 0);
         }
         catch (Exception e)
         {
-            return new ResultsRecord<D365SalesOrderHeaderRecord>(false, [e.Message]);
+            return (false, e.Message, null, page, pageSize, 0);
         }
     }
 
-    public async Task<ResultRecord<D365SalesOrderHeaderRecord>> GetSalesOrderAsync(string baseUrl, string? dataAreaId, string? salesOrderNumber)
+    public async Task<ResultsRecord<D365SalesOrderLineRecord>> GetSalesOrderLinesAsync(string baseUrl, string? dataAreaId, string? salesOrderNumber)
     {
         try
         {
-            var uri = new Uri(new Uri(baseUrl), $"/data/SalesOrderHeadersV3(dataAreaId='{dataAreaId}', SalesOrderNumber='{salesOrderNumber}')?$expand=SalesOrderLines");
-            var record = await client.GetFromJsonAsync<D365SalesOrderHeaderRecord>(uri, BusinessExtensions.JsonSerializerOptions);
+            var queryParameters = HttpUtility.ParseQueryString(string.Empty);
+
+
+            queryParameters.Add("$filter", $"dataAreaId eq '{dataAreaId}' and SalesOrderNumber eq '{salesOrderNumber}'");
+            queryParameters.Add("$orderby", "LineNumber asc");
+            queryParameters.Add("$count", "true");
+
+            var uri = new Uri(new Uri(baseUrl), $"/data/SalesOrderLines?{queryParameters}");
+            var record = await client.GetFromJsonAsync<D365SalesOrderLineRecord[]>(uri, BusinessExtensions.JsonSerializerOptions);
 
             return record != null
-                ? new ResultRecord<D365SalesOrderHeaderRecord>(Data: record)
-                : new ResultRecord<D365SalesOrderHeaderRecord>(false, ["Error"]);
+                ? new ResultsRecord<D365SalesOrderLineRecord>(Data: record)
+                : new ResultsRecord<D365SalesOrderLineRecord>(false, ["Error"]);
         }
         catch (Exception e)
         {
-            return new ResultRecord<D365SalesOrderHeaderRecord>(false, [e.Message]);
+            return new ResultsRecord<D365SalesOrderLineRecord>(false, [e.Message]);
         }
     }
 
